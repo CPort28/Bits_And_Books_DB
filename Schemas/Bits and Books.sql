@@ -1,4 +1,3 @@
-
 -- Creating Entities
 CREATE TABLE CATEGORY (
     category_id INTEGER NOT NULL PRIMARY KEY,

@@ -12,7 +12,7 @@ class CsvGeneratorUtility
   #   The keys are the attibute names (column headers) and the values get
   #   written to a csv file by hash
   #
-  def generate_csv (filename, hash_array)
+  def generate_csv(filename, hash_array)
     file = File.open(filename, "w")
     attribute_names = hash_array[0].keys
     
