@@ -1,0 +1,25 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    concurrent-ruby (1.2.2)
+    faker (3.1.1)
+      i18n (>= 1.8.11, < 2)
+    i18n (1.12.0)
+      concurrent-ruby (~> 1.0)
+    io-console (0.6.0)
+    irb (1.6.2)
+      reline (>= 0.3.0)
+    reline (0.3.2)
+      io-console (~> 0.5)
+    rubystats (0.3.0)
+
+PLATFORMS
+  x86_64-darwin-21
+
+DEPENDENCIES
+  faker
+  irb
+  rubystats
+
+BUNDLED WITH
+   2.3.23
