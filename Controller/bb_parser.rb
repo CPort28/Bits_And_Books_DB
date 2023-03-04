@@ -1,9 +1,24 @@
 
 require_relative '../Model/csv_parser'
-require_relative '../Utility/csv_generator_utility'
 require 'faker'
 require 'date'
+require 'rubystats'
 Faker::Config.locale = 'en-US'
+
+
+# Config
+NUM_CUSTOMERS = 100
+NUM_EMPLOYEES = 10
+MAX_ORDER_PER_CUSTOMER = 5
+MIN_ORDER_PER_CUSTOMER = 0
+MAX_DIFF_BOOKS_PER_ORDER = 10
+MIN_DIFF_BOOKS_PER_ORDER = 1
+MAX_BOOK_ORDER_QUANTITY = 3
+MIN_BOOK_ORDER_QUANTITY = 1
+WAREHOUSES = 2
+START_SALES_DATE = "2010-01-01"
+END_SALES_DATE = Date.today
+RESERVE_SPACE = 500
 
 def get_author_id(auth_arr, auth_name)
   author = auth_arr.select {|auth_hash| auth_hash["name"] == auth_name}.first
@@ -34,8 +49,7 @@ end
 # FOR TESTING:
 # puts category_array
 
-csvGen = CsvGeneratorUtility.new
-csvGen.generate_csv("../Output/bb_categories.csv", category_array)
+parser.generate_csv("../Output/bb_categories.csv", category_array)
 
 # Creating a Csv of Publishers
 publisher_column = parser.get_column("Publisher")
@@ -58,7 +72,7 @@ end
 # FOR TESTING:
 # puts publisher_array
 
-csvGen.generate_csv("../Output/bb_publishers.csv", publisher_array)
+parser.generate_csv("../Output/bb_publishers.csv", publisher_array)
 
 # Creating a CSV of books
 books_array = []
@@ -80,7 +94,7 @@ end
 # FOR TESTING:
 # puts books_array
 
-csvGen.generate_csv("../Output/bb_books.csv", books_array)
+parser.generate_csv("../Output/bb_books.csv", books_array)
 
 # Creating a CSV of authors
 author_array = []
@@ -145,7 +159,7 @@ end
 # FOR TESTING:
 # puts author_array
 
-csvGen.generate_csv("../Output/bb_authors.csv", author_array)
+parser.generate_csv("../Output/bb_authors.csv", author_array)
 
 # Generating Written By CSV
 written_by_array = []
@@ -165,4 +179,180 @@ end
 # FOR TESTING:
 # puts written_by_array
 
-csvGen.generate_csv("../Output/bb_written_by.csv", written_by_array)
+parser.generate_csv("../Output/bb_written_by.csv", written_by_array)
+
+# Generating users
+user_counter = 1
+customer_users_array = []
+employee_users_array = []
+providers = ["bitsbooks.com"]
+for i in 0...NUM_EMPLOYEES
+  user_id = user_counter
+  user_counter = user_counter + 1
+  fname = Faker::Name.first_name
+  lname = Faker::Name.last_name
+  name = fname + lname
+  email = "#{fname}.#{lname}#{rand(0..999)}@#{providers.sample}"
+  phone_no = Faker::PhoneNumber.cell_phone.delete("-. ()")
+  address = Faker::Address.street_address
+  secondary_address = ""
+  if rand(1..10) == 1
+    secondary_address = Faker::Address.secondary_address
+  end
+  city = Faker::Address.city
+  country = "USA"
+  state = Faker::Address.state_abbr
+  zip = Faker::Address.postcode
+  employee_users_array.push({"user_id" => user_id, "name" => name, "fname" => fname, 
+    "lname" => lname, "email" => email, "phone_no" => phone_no, "address" => address, 
+    "secondary_address" => secondary_address, "city" => city, "state" => state,
+    "zip" => zip, "country" => country})
+end
+
+providers = ["gmail.com", "hotmail.com", "yahoo.com"]
+for i in 0...NUM_CUSTOMERS
+  user_id = user_counter
+  user_counter = user_counter + 1
+  fname = Faker::Name.first_name
+  lname = Faker::Name.last_name
+  name = fname + lname
+  email = "#{fname}.#{lname}#{rand(0..999)}@#{providers.sample}"
+  phone_no = Faker::PhoneNumber.cell_phone.delete("-. ()")
+  address = Faker::Address.street_address
+  secondary_address = ""
+  if rand(1..10) == 1
+    secondary_address = Faker::Address.secondary_address
+  end
+  city = Faker::Address.city
+  if rand(1..50) == 1
+    country = "CAN"
+    possible_regions = ["QC", "ON", "MB", "SK", "AB", "NS", "NB", "NL", "PE", "BC", "YT", "NT", "NU"]
+    state = possible_regions.sample
+  else
+    country = "USA"
+    state = Faker::Address.state_abbr
+  end
+  zip = Faker::Address.postcode
+  customer_users_array.push({"user_id" => user_id, "name" => name, "fname" => fname, 
+    "lname" => lname, "email" => email, "phone_no" => phone_no, "address" => address, 
+    "secondary_address" => secondary_address, "city" => city, "state" => state,
+    "zip" => zip, "country" => country})
+end
+
+# FOR TESTING:
+# puts employee_users_array
+# puts customer_users_array
+
+parser.generate_csv("../Output/bb_users.csv", employee_users_array + customer_users_array)
+
+order_counter = 1
+bill_numbers = []
+order_array = []
+# Generating orders
+customer_users_array.each_with_index do |customer, index|
+  customer_id = customer["user_id"]
+  for i in 0..rand(MIN_ORDER_PER_CUSTOMER..MAX_ORDER_PER_CUSTOMER)
+    order_id = order_counter
+    order_counter = order_counter + 1
+    sale_date = Faker::Date.between(from: START_SALES_DATE, to: END_SALES_DATE)
+    valid_bill_no = 0
+    while valid_bill_no == 0 do
+      bill_no = rand(10000..99999)
+      if !bill_numbers.include?(bill_no)
+        bill_numbers.push(bill_no)
+        valid_bill_no = 1
+      end
+    end
+    order_array.push({"order_id" => order_id, "sale_date" => sale_date, "bill_no" => bill_no, 
+      "customer_id" => customer_id})
+  end
+end
+
+# FOR TESTING:
+# puts order_array
+
+parser.generate_csv("../Output/bb_orders.csv", order_array)
+
+# Generating Warehouses
+warehouse_array = []
+for i in 0...WAREHOUSES
+  warehouse_id = i + 1
+  address = Faker::Address.street_address
+  city = Faker::Address.city
+  state = Faker::Address.state_abbr
+  zip = Faker::Address.postcode
+  country = "USA"
+  total_capacity = rand(2000..8000)
+  warehouse_array.push({"warehouse_id" => warehouse_id, "address" => address, "city" => city, 
+    "state" => state, "zip" => zip, "country" => country, "total_capacity" => total_capacity})
+end
+
+# FOR TESTING:
+# puts warehouse_array
+
+parser.generate_csv("../Output/bb_warehouses.csv", warehouse_array)
+
+# Generating Warehouse Stock
+warehouse_stock_array = []
+warehouse_array.each_with_index do |warehouse, index|
+  moving_capacity = warehouse["total_capacity"]
+  average_book_stock = (warehouse["total_capacity"] - RESERVE_SPACE) / books_array.length
+  book_stock_dev = 50
+  norm = Rubystats::NormalDistribution.new(average_book_stock, book_stock_dev)
+  books_array.each_with_index do |book, index2|
+    isbn = book["isbn"]
+    warehouse_id = warehouse["warehouse_id"]
+    quantity = norm.rng.to_i.abs
+    if moving_capacity < quantity
+      quantity = moving_capacity
+    end
+    warehouse_stock_array.push({"isbn" => isbn, "warehouse_id" => warehouse_id, "quantity" => quantity})
+  end
+end
+
+# FOR TESTING:
+# puts warehouse_stock_array
+
+parser.generate_csv("../Output/bb_warehouse_stock.csv", warehouse_stock_array)
+
+# Generating Book Orders
+book_order_array = []
+order_array.each_with_index do |order, index|
+  books_ordered = []
+  order_id = order["order_id"]
+  warehouse_id = rand(1..WAREHOUSES)
+  for i in 0...rand(MIN_DIFF_BOOKS_PER_ORDER..MAX_DIFF_BOOKS_PER_ORDER)
+    # selecting book
+    unique_book = 0
+    while unique_book == 0
+      isbn = books_array.sample["isbn"]
+      if !books_ordered.include?(isbn)
+        unique_book = 1
+        books_ordered.push(isbn)
+      end
+    end
+    quantity = rand(MIN_BOOK_ORDER_QUANTITY..MAX_BOOK_ORDER_QUANTITY)
+    book_order_array.push({"warehouse_id" => warehouse_id, "isbn" => isbn, "order_id" => order_id, "quantity" => quantity})
+  end
+end
+
+# FOR TESTING:
+# puts book_order_array
+
+parser.generate_csv("../Output/bb_book_orders.csv", books_array)
+
+positions = ["Information Technology", "Human Resources", "Logistics", "Manager", "Transport", "Robotics Engineer"]
+
+# Generating Employees
+employee_array = []
+employee_users_array.each_with_index do |emp_user, index|
+  employee_id = emp_user["user_id"]
+  warehouse_id = rand(1..WAREHOUSES)
+  position = positions.sample
+  employee_array.push({"employee_id" => employee_id, "warehouse_id" => warehouse_id, "position" => position})
+end
+
+# FOR TESTING:
+# puts employee_array
+
+parser.generate_csv("../Output/bb_employees.csv", employee_array)

@@ -1,102 +1,102 @@
-author_id,name,first_name,last_name,middle_inits,birth_date,death_date
-1,Chip Dawes,Chip,Dawes,,1974-01-02,
-2,Biju Thomas,Biju,Thomas,,1975-08-08,2013-09-25
-3,Doug Stuns,Doug,Stuns,,1959-07-02,2020-05-26
-4,Matthew Weishan,Matthew,Weishan,,1954-10-08,
-5,Joseph C. Johnson,Joseph,Johnson,C.,1946-05-29,2022-11-15
-6,Brian Knight,Brian,Knight,,1965-04-29,
-7,Ralph Kimball,Ralph,Kimball,,1938-12-07,2013-12-01
-8,Margy Ross,Margy,Ross,,1950-05-20,2015-02-06
-9,Bill Mann,Bill,Mann,,1965-03-24,2017-08-16
-10,Ian H. Witten,Ian,Witten,H.,1969-11-04,2017-05-02
-11,Eibe Frank,Eibe,Frank,,1948-11-08,2015-01-14
-12,Robert D. Schmidt,Robert,Schmidt,D.,1932-05-24,2013-09-23
-13,Ken Henderson,Ken,Henderson,,1976-06-29,2020-03-02
-14,Paul Litwin,Paul,Litwin,,1937-07-18,2021-11-20
-15,Ken Getz,Ken,Getz,,1943-01-15,
-16,Mike Gunderloy,Mike,Gunderloy,,1974-11-10,
-17,Ben Forta,Ben,Forta,,1959-04-12,2019-08-26
-18,Nate Weiss,Nate,Weiss,,1958-01-20,
-19,Leon Chalnick,Leon,Chalnick,,1957-02-21,2020-12-21
-20,Angela C. Buraglia,Angela,Buraglia,C.,1933-04-26,
-21,Ramez A. Elmasri,Ramez,Elmasri,A.,1971-06-08,
-22,Shamkant B. Navathe,Shamkant,Navathe,B.,1937-08-26,
-23,Rob Vieira,Rob,Vieira,,1959-02-16,
-24,Paul DuBois,Paul,DuBois,,1974-01-30,
-25,Laurell K. Hamilton,Laurell,Hamilton,K.,1959-01-03,
-26,Sue Monk Kidd,Sue,Kidd,Monk,1975-10-03,
-27,Tara Calishain,Tara,Calishain,,1938-12-18,2016-07-01
-28,Rael Dornfest,Rael,Dornfest,,1930-12-14,2014-02-02
-29,Jay P. Decima,Jay,Decima,P.,1964-03-12,
-30,Wladyslaw Szpilman,Wladyslaw,Szpilman,,1938-11-28,
-31,Roma Ligocka,Roma,Ligocka,,1956-02-16,2022-10-25
-32,Michael Cunningham,Michael,Cunningham,,1975-04-06,
-33,Larry Bossidy,Larry,Bossidy,,1950-05-31,
-34,Ram Charan,Ram,Charan,,1954-10-05,
-35,Charles Burck,Charles,Burck,,1963-08-08,2020-04-08
-36,James Patterson,James,Patterson,,1955-10-03,2020-12-26
-37,Andrew Gross,Andrew,Gross,,1947-09-25,
-38,Jeffery Deaver,Jeffery,Deaver,,1934-07-12,2020-10-23
-39,Jacquelyn Mitchard,Jacquelyn,Mitchard,,1979-12-13,2015-08-18
-40,Patrick Lencioni,Patrick,Lencioni,,1971-09-28,
-41,Mary Higgins Clark,Mary,Clark,Higgins,1933-02-23,2015-08-15
-42,Dee Henderson,Dee,Henderson,,1974-09-25,2021-08-02
-43,Ann Patchett,Ann,Patchett,,1966-03-05,2015-06-23
-44,Karen Marie Moning,Karen,Moning,Marie,1936-03-20,
-45,Suzanne Brockmann,Suzanne,Brockmann,,1937-02-08,
-46,Steven Pinker,Steven,Pinker,,1946-02-26,2020-05-06
-47,Albert-L�szl� Barab�si,Albert-L�szl�,Barab�si,,1950-07-13,
-48,Edward Osborne Wilson,Edward,Wilson,Osborne,1980-07-16,
-49,Stephen Wolfram,Stephen,Wolfram,,1974-05-07,2014-11-06
-50,Harold McGee,Harold,McGee,,1945-06-28,2012-12-09
-51,Francis D. K. Ching,Francis,Ching,D. K.,1964-11-24,
-52,Cassandra Adams,Cassandra,Adams,,1966-02-25,
-53,Virginia McAlester,Virginia,McAlester,,1937-01-14,2013-11-12
-54,Lee McAlester,Lee,McAlester,,1975-02-20,
-55,Bryan Burkhart,Bryan,Burkhart,,1960-11-13,
-56,Allison Arieff,Allison,Arieff,,1956-04-04,2015-10-19
-57,Ralph R. Kylloe,Ralph,Kylloe,R.,1938-01-30,2021-05-09
-58,Leslie Plummer Clagett,Leslie,Clagett,Plummer,1947-01-23,2015-08-20
-59,Gerard Gefen,Gerard,Gefen,,1980-08-07,
-60,Christine Bastin,Christine,Bastin,,1973-04-25,
-61,Jacques Evrard,Jacques,Evrard,,1975-12-30,2013-05-14
-62,Donald Kaufman,Donald,Kaufman,,1965-11-05,
-63,Taffy Dahl,Taffy,Dahl,,1960-01-25,
-64,Laurel Graeber,Laurel,Graeber,,1954-08-27,2020-12-17
-65,Tina Freeman,Tina,Freeman,,1950-12-27,
-66,Simon Benninga,Simon,Benninga,,1943-03-22,
-67,Benjamin Czaczkes,Benjamin,Czaczkes,,1976-11-17,
-68,Mark Grinblatt,Mark,Grinblatt,,1942-01-27,
-69,Sheridan Titman,Sheridan,Titman,,1965-01-27,
-70,Robert C. Higgins,Robert,Higgins,C.,1958-02-03,
-71,Paul Marcus Fischer,Paul,Fischer,Marcus,1959-12-08,
-72,William James Taylor,William,Taylor,James,1959-08-14,
-73,Rita Hartung Cheng,Rita,Cheng,Hartung,1958-01-02,2018-05-06
-74,Donald E. Kieso,Donald,Kieso,E.,1939-03-26,2016-03-23
-75,Jerry J. Weygandt,Jerry,Weygandt,J.,1954-08-27,2013-02-08
-76,Terry D. Warfield,Terry,Warfield,D.,1977-10-18,
-77,Lawrence Revsine,Lawrence,Revsine,,1932-09-18,2014-07-08
-78,Daniel W. Collins,Daniel,Collins,W.,1958-10-12,2015-11-18
-79,W. Bruce Johnson,W.,Johnson,Bruce,1947-09-10,2016-08-30
-80,Nicholas Sparks,Nicholas,Sparks,,1960-08-07,
-81,Don DeLillo,Don,DeLillo,,1948-07-16,2021-09-22
-82,Stephen King,Stephen,King,,1974-03-26,
-83,Mark Z. Danielewski,Mark,Danielewski,Z.,1969-08-12,
-84,Michael Romkey,Michael,Romkey,,1945-12-08,2010-01-13
-85,Chuck Palahniuk,Chuck,Palahniuk,,1938-04-11,2023-01-19
-86,Matthew Delaney,Matthew,Delaney,,1970-07-03,
-87,Bernie Wrightson,Bernie,Wrightson,,1955-06-23,2021-07-16
-88,Jeffrey M. Wooldridge,Jeffrey,Wooldridge,M.,1956-11-21,2011-09-23
-89,Steven J. Root,Steven,Root,J.,1963-03-25,
-90,Ken Coffman,Ken,Coffman,,1960-09-12,2023-01-02
-91,Gerald Carter,Gerald,Carter,,1931-07-07,
-92,Scott Kelby,Scott,Kelby,,1931-11-18,2012-04-02
-93,B. J. Fogg,B.,Fogg,J.,1944-11-13,2015-05-03
-94,Michael Meyers,Michael,Meyers,,1963-10-17,
-95,Carl Sagan,Carl,Sagan,,1950-04-28,
-96,Alice Sebold,Alice,Sebold,,1953-07-08,2014-02-04
-97,Ian McEwan,Ian,McEwan,,1943-04-20,2013-03-12
-98,Nora Roberts,Nora,Roberts,,1968-09-27,2010-06-13
-99,Andy Rae,Andy,Rae,,1978-09-14,
-100,Joseph Truini,Joseph,Truini,,1973-12-02,
-101,Terry Pratchett,Terry,Pratchett,,1930-02-17,2012-09-21
+author_id;name;first_name;last_name;middle_inits;birth_date;death_date
+1;Chip Dawes;Chip;Dawes;;1978-04-02;
+2;Biju Thomas;Biju;Thomas;;1942-04-11;2019-01-21
+3;Doug Stuns;Doug;Stuns;;1941-03-28;
+4;Matthew Weishan;Matthew;Weishan;;1953-08-24;2021-01-05
+5;Joseph C. Johnson;Joseph;Johnson;C.;1936-03-02;
+6;Brian Knight;Brian;Knight;;1954-12-13;2021-01-25
+7;Ralph Kimball;Ralph;Kimball;;1957-03-30;
+8;Margy Ross;Margy;Ross;;1952-11-26;
+9;Bill Mann;Bill;Mann;;1932-10-05;
+10;Ian H. Witten;Ian;Witten;H.;1972-11-27;
+11;Eibe Frank;Eibe;Frank;;1971-07-28;
+12;Robert D. Schmidt;Robert;Schmidt;D.;1945-09-13;
+13;Ken Henderson;Ken;Henderson;;1948-04-01;
+14;Paul Litwin;Paul;Litwin;;1949-11-27;2019-10-19
+15;Ken Getz;Ken;Getz;;1964-10-31;
+16;Mike Gunderloy;Mike;Gunderloy;;1945-03-25;
+17;Ben Forta;Ben;Forta;;1942-07-26;
+18;Nate Weiss;Nate;Weiss;;1960-07-23;2010-02-10
+19;Leon Chalnick;Leon;Chalnick;;1940-04-21;2013-03-16
+20;Angela C. Buraglia;Angela;Buraglia;C.;1963-11-18;
+21;Ramez A. Elmasri;Ramez;Elmasri;A.;1970-12-15;
+22;Shamkant B. Navathe;Shamkant;Navathe;B.;1964-08-24;
+23;Rob Vieira;Rob;Vieira;;1980-07-24;
+24;Paul DuBois;Paul;DuBois;;1961-12-30;
+25;Laurell K. Hamilton;Laurell;Hamilton;K.;1938-12-25;2012-01-15
+26;Sue Monk Kidd;Sue;Kidd;Monk;1953-09-19;2018-08-11
+27;Tara Calishain;Tara;Calishain;;1939-11-22;
+28;Rael Dornfest;Rael;Dornfest;;1956-04-05;2016-12-27
+29;Jay P. Decima;Jay;Decima;P.;1943-05-25;
+30;Wladyslaw Szpilman;Wladyslaw;Szpilman;;1962-07-19;
+31;Roma Ligocka;Roma;Ligocka;;1934-10-31;2012-09-26
+32;Michael Cunningham;Michael;Cunningham;;1960-06-18;
+33;Larry Bossidy;Larry;Bossidy;;1935-06-30;2019-01-20
+34;Ram Charan;Ram;Charan;;1953-05-21;2014-07-24
+35;Charles Burck;Charles;Burck;;1943-08-02;2016-08-02
+36;James Patterson;James;Patterson;;1966-10-24;
+37;Andrew Gross;Andrew;Gross;;1971-08-01;2020-02-15
+38;Jeffery Deaver;Jeffery;Deaver;;1948-12-21;
+39;Jacquelyn Mitchard;Jacquelyn;Mitchard;;1932-12-03;
+40;Patrick Lencioni;Patrick;Lencioni;;1949-02-12;
+41;Mary Higgins Clark;Mary;Clark;Higgins;1975-04-12;
+42;Dee Henderson;Dee;Henderson;;1960-11-15;
+43;Ann Patchett;Ann;Patchett;;1948-12-14;2022-06-06
+44;Karen Marie Moning;Karen;Moning;Marie;1972-11-24;
+45;Suzanne Brockmann;Suzanne;Brockmann;;1943-02-14;
+46;Steven Pinker;Steven;Pinker;;1963-01-27;
+47;Albert-L�szl� Barab�si;Albert-L�szl�;Barab�si;;1973-05-30;
+48;Edward Osborne Wilson;Edward;Wilson;Osborne;1975-11-14;
+49;Stephen Wolfram;Stephen;Wolfram;;1947-01-19;
+50;Harold McGee;Harold;McGee;;1971-04-24;
+51;Francis D. K. Ching;Francis;Ching;D. K.;1974-08-07;
+52;Cassandra Adams;Cassandra;Adams;;1967-04-14;
+53;Virginia McAlester;Virginia;McAlester;;1944-04-11;2022-04-29
+54;Lee McAlester;Lee;McAlester;;1936-12-26;2013-07-13
+55;Bryan Burkhart;Bryan;Burkhart;;1958-06-04;2022-10-13
+56;Allison Arieff;Allison;Arieff;;1956-04-14;
+57;Ralph R. Kylloe;Ralph;Kylloe;R.;1956-09-28;
+58;Leslie Plummer Clagett;Leslie;Clagett;Plummer;1957-12-21;
+59;Gerard Gefen;Gerard;Gefen;;1970-11-23;2014-05-17
+60;Christine Bastin;Christine;Bastin;;1971-12-27;
+61;Jacques Evrard;Jacques;Evrard;;1954-10-18;2018-05-10
+62;Donald Kaufman;Donald;Kaufman;;1940-08-20;2019-01-14
+63;Taffy Dahl;Taffy;Dahl;;1975-02-03;2021-07-27
+64;Laurel Graeber;Laurel;Graeber;;1949-11-26;
+65;Tina Freeman;Tina;Freeman;;1954-08-04;2016-08-21
+66;Simon Benninga;Simon;Benninga;;1937-01-17;2012-08-10
+67;Benjamin Czaczkes;Benjamin;Czaczkes;;1945-08-20;2014-01-03
+68;Mark Grinblatt;Mark;Grinblatt;;1957-10-09;
+69;Sheridan Titman;Sheridan;Titman;;1938-05-13;2010-03-30
+70;Robert C. Higgins;Robert;Higgins;C.;1937-07-07;2021-06-15
+71;Paul Marcus Fischer;Paul;Fischer;Marcus;1948-01-19;
+72;William James Taylor;William;Taylor;James;1930-01-05;
+73;Rita Hartung Cheng;Rita;Cheng;Hartung;1966-07-05;
+74;Donald E. Kieso;Donald;Kieso;E.;1961-12-15;2017-11-02
+75;Jerry J. Weygandt;Jerry;Weygandt;J.;1935-11-26;
+76;Terry D. Warfield;Terry;Warfield;D.;1950-03-06;2013-08-29
+77;Lawrence Revsine;Lawrence;Revsine;;1935-09-02;2010-12-12
+78;Daniel W. Collins;Daniel;Collins;W.;1969-11-01;2020-06-14
+79;W. Bruce Johnson;W.;Johnson;Bruce;1949-11-10;2011-09-28
+80;Nicholas Sparks;Nicholas;Sparks;;1944-01-12;2013-01-23
+81;Don DeLillo;Don;DeLillo;;1959-02-16;
+82;Stephen King;Stephen;King;;1964-09-15;2017-02-17
+83;Mark Z. Danielewski;Mark;Danielewski;Z.;1944-10-11;
+84;Michael Romkey;Michael;Romkey;;1977-03-16;2018-04-21
+85;Chuck Palahniuk;Chuck;Palahniuk;;1946-04-07;2014-07-12
+86;Matthew Delaney;Matthew;Delaney;;1961-04-11;
+87;Bernie Wrightson;Bernie;Wrightson;;1969-08-08;2019-12-06
+88;Jeffrey M. Wooldridge;Jeffrey;Wooldridge;M.;1944-06-07;2019-10-19
+89;Steven J. Root;Steven;Root;J.;1932-09-23;2016-02-06
+90;Ken Coffman;Ken;Coffman;;1957-07-01;2014-04-26
+91;Gerald Carter;Gerald;Carter;;1968-01-24;
+92;Scott Kelby;Scott;Kelby;;1979-09-02;
+93;B. J. Fogg;B.;Fogg;J.;1946-06-21;2012-02-10
+94;Michael Meyers;Michael;Meyers;;1951-01-24;
+95;Carl Sagan;Carl;Sagan;;1977-03-21;
+96;Alice Sebold;Alice;Sebold;;1950-01-28;2022-12-04
+97;Ian McEwan;Ian;McEwan;;1969-02-14;2022-05-08
+98;Nora Roberts;Nora;Roberts;;1931-06-02;2019-04-16
+99;Andy Rae;Andy;Rae;;1938-08-30;
+100;Joseph Truini;Joseph;Truini;;1970-02-28;
+101;Terry Pratchett;Terry;Pratchett;;1938-07-14;
