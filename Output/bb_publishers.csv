@@ -1,62 +1,62 @@
-publisher_id,pub_name,phone_no,email
-1,Sybex,9042812638,supply@sybex.org
-2,McGraw-Hill Osborne Media,9403169479,supply@mcgraw-hillosbornemedia.org
-3,John Wiley & Sons,9567378134,supply@johnwiley&sons.org
-4,Morgan Kaufmann,7633212104,supply@morgankaufmann.org
-5,Schmidt Ink, Inc.,2285573519,supply@schmidtinkinc.org
-6,Addison-Wesley Pub Co,4082514869,supply@addison-wesleypubco.org
-7,Macromedia Press,8157602159,supply@macromediapress.org
-8,Addison-Wesley Publishing,8782819593,supply@addison-wesleypublishing.org
-9,Wrox Press Inc,7819078616,supply@wroxpressinc.org
-10,Berkley Pub Group,9374808972,supply@berkleypubgroup.org
-11,Penguin USA,9526828667,supply@penguinusa.org
-12,O'Reilly & Associates,2769072470,supply@o'reilly&associates.org
-13,McGraw-Hill Trade,5134692428,supply@mcgraw-hilltrade.org
-14,Picador,6169315286,supply@picador.org
-15,St. Martin's Press,9477180487,supply@stmartin'spress.org
-16,Crown Pub,2183603491,supply@crownpub.org
-17,Little Brown & Company,6157700447,supply@littlebrown&company.org
-18,Simon & Schuster,8452604245,supply@simon&schuster.org
-19,HarperCollins,9158029743,supply@harpercollins.org
-20,Jossey-Bass,8657740740,supply@jossey-bass.org
-21,Multnomah Publishers Inc.,3526361853,supply@multnomahpublishersinc.org
-22,Perennial,4406463080,supply@perennial.org
-23,Dell Pub Co,7035571289,supply@dellpubco.org
-24,Harlequin,4799190340,supply@harlequin.org
-25,Viking Press,5678087653,supply@vikingpress.org
-26,Perseus Publishing,9858485355,supply@perseuspublishing.org
-27,Random House,8175151744,supply@randomhouse.org
-28,Knopf,6506232697,supply@knopf.org
-29,Wolfram Medi. Inc.,8012706642,supply@wolframmediinc.org
-30,Fireside,4013207814,supply@fireside.org
-31,Random House Trade Paperbacks,6075622892,supply@randomhousetradepaperbacks.org
-32,Gibbs Smith Publisher,2526624253,supply@gibbssmithpublisher.org
-33,Taunton Pr,4109471437,supply@tauntonpr.org
-34,Vendome Pr,4042032237,supply@vendomepr.org
-35,Clarkson N. Potter,8645519558,supply@clarksonnpotter.org
-36,MIT Press,6197721732,supply@mitpress.org
-37,McGraw-Hill/Irwin,2819493542,supply@mcgraw-hill/irwin.org
-38,South-Western College Pub,6789560410,supply@south-westerncollegepub.org
-39,Prentice Hall,6063124748,supply@prenticehall.org
-40,Warner Books,3037070198,supply@warnerbooks.org
-41,Scribner,9155099501,supply@scribner.org
-42,Pocket Books,9858011502,supply@pocketbooks.org
-43,Pantheon Books,2103084841,supply@pantheonbooks.org
-44,Del Rey,7319169057,supply@delrey.org
-45,Doubleday,8477243954,supply@doubleday.org
-46,Donald M. Grant Publisher, Inc.,7346161063,supply@donaldmgrantpublisherinc.org
-47,Vintage Books,3308593690,supply@vintagebooks.org
-48,Scribner Paperback Fiction,2345621523,supply@scribnerpaperbackfiction.org
-49,Harvest Books,4133232562,supply@harvestbooks.org
-50,Harperperennial Library,4065719399,supply@harperperenniallibrary.org
-51,W.W. Norton & Company,9379414292,supply@wwnorton&company.org
-52,Harvard Univ Pr,5098458542,supply@harvardunivpr.org
-53,Prentice Hall PTR,5865106260,supply@prenticehallptr.org
-54,New Riders Publishing,2404019884,supply@newriderspublishing.org
-55,Ballantine Books,2488122266,supply@ballantinebooks.org
-56,Back Bay Books,8069700744,supply@backbaybooks.org
-57,Anchor Books,9169072437,supply@anchorbooks.org
-58,Putnam Pub Group,2183343803,supply@putnampubgroup.org
-59,Silhouette,2133371680,supply@silhouette.org
-60,Lark Books,6608152911,supply@larkbooks.org
-61,Harper,6028049553,supply@harper.org
+publisher_id;pub_name;phone_no;email
+1;Sybex;3043088369;supply@sybex.org
+2;McGraw-Hill Osborne Media;7198658107;supply@mcgraw-hillosbornemedia.org
+3;John Wiley & Sons;5075635301;supply@johnwiley&sons.org
+4;Morgan Kaufmann;5418106020;supply@morgankaufmann.org
+5;Schmidt Ink, Inc.;7606514861;supply@schmidtinkinc.org
+6;Addison-Wesley Pub Co;3516675152;supply@addison-wesleypubco.org
+7;Macromedia Press;7245858918;supply@macromediapress.org
+8;Addison-Wesley Publishing;5019731190;supply@addison-wesleypublishing.org
+9;Wrox Press Inc;4018021550;supply@wroxpressinc.org
+10;Berkley Pub Group;2256234194;supply@berkleypubgroup.org
+11;Penguin USA;2705035304;supply@penguinusa.org
+12;O'Reilly & Associates;2812281729;supply@o'reilly&associates.org
+13;McGraw-Hill Trade;9414149531;supply@mcgraw-hilltrade.org
+14;Picador;7073361963;supply@picador.org
+15;St. Martin's Press;6369160968;supply@stmartin'spress.org
+16;Crown Pub;5165641497;supply@crownpub.org
+17;Little Brown & Company;2563517473;supply@littlebrown&company.org
+18;Simon & Schuster;3345034316;supply@simon&schuster.org
+19;HarperCollins;9076181635;supply@harpercollins.org
+20;Jossey-Bass;9792194305;supply@jossey-bass.org
+21;Multnomah Publishers Inc.;2568024832;supply@multnomahpublishersinc.org
+22;Perennial;2544649823;supply@perennial.org
+23;Dell Pub Co;4693087397;supply@dellpubco.org
+24;Harlequin;9524800987;supply@harlequin.org
+25;Viking Press;4795416736;supply@vikingpress.org
+26;Perseus Publishing;5747243122;supply@perseuspublishing.org
+27;Random House;4027704737;supply@randomhouse.org
+28;Knopf;8599085353;supply@knopf.org
+29;Wolfram Medi. Inc.;8133098210;supply@wolframmediinc.org
+30;Fireside;3139527729;supply@fireside.org
+31;Random House Trade Paperbacks;8042601692;supply@randomhousetradepaperbacks.org
+32;Gibbs Smith Publisher;9015109502;supply@gibbssmithpublisher.org
+33;Taunton Pr;8482066878;supply@tauntonpr.org
+34;Vendome Pr;2123092561;supply@vendomepr.org
+35;Clarkson N. Potter;2489400705;supply@clarksonnpotter.org
+36;MIT Press;9182144157;supply@mitpress.org
+37;McGraw-Hill/Irwin;5153105791;supply@mcgraw-hill/irwin.org
+38;South-Western College Pub;3207860058;supply@south-westerncollegepub.org
+39;Prentice Hall;3376828002;supply@prenticehall.org
+40;Warner Books;4134042022;supply@warnerbooks.org
+41;Scribner;6612080175;supply@scribner.org
+42;Pocket Books;5598058838;supply@pocketbooks.org
+43;Pantheon Books;6182033625;supply@pantheonbooks.org
+44;Del Rey;7818316705;supply@delrey.org
+45;Doubleday;8658289032;supply@doubleday.org
+46;Donald M. Grant Publisher, Inc.;2152510108;supply@donaldmgrantpublisherinc.org
+47;Vintage Books;2016024112;supply@vintagebooks.org
+48;Scribner Paperback Fiction;3099193029;supply@scribnerpaperbackfiction.org
+49;Harvest Books;7653214935;supply@harvestbooks.org
+50;Harperperennial Library;6078657760;supply@harperperenniallibrary.org
+51;W.W. Norton & Company;2199794925;supply@wwnorton&company.org
+52;Harvard Univ Pr;4344155150;supply@harvardunivpr.org
+53;Prentice Hall PTR;2134845784;supply@prenticehallptr.org
+54;New Riders Publishing;9182199896;supply@newriderspublishing.org
+55;Ballantine Books;8308134969;supply@ballantinebooks.org
+56;Back Bay Books;5078315369;supply@backbaybooks.org
+57;Anchor Books;8646416241;supply@anchorbooks.org
+58;Putnam Pub Group;3099036009;supply@putnampubgroup.org
+59;Silhouette;3056055574;supply@silhouette.org
+60;Lark Books;8659097252;supply@larkbooks.org
+61;Harper;2699723393;supply@harper.org
