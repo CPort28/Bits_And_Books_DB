@@ -1,11 +1,11 @@
 employee_id;warehouse_id;position
-1;1;Transport
-2;2;Logistics
-3;2;Transport
-4;1;Logistics
-5;2;Human Resources
-6;2;Transport
+1;1;Logistics
+2;1;Robotics Engineer
+3;1;Transport
+4;1;Manager
+5;1;Transport
+6;2;Manager
 7;2;Human Resources
-8;2;Robotics Engineer
+8;1;Manager
 9;1;Human Resources
-10;1;Information Technology
+10;2;Transport
