@@ -5,18 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="982548bb-3267-4245-97df-b7376ab8e55b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/9c1a3936-898b-4d41-a744-5951895b1546.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9c1a3936-898b-4d41-a744-5951895b1546.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bits_And_Books.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/Bits_And_Books.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/bb_parser.rb" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/bb_parser.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/csv_parser.rb" beforeDir="false" afterPath="$PROJECT_DIR$/Model/csv_parser.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/bb_authors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Output/bb_authors.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/bb_books.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Output/bb_books.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/bb_categories.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Output/bb_categories.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/bb_publishers.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Output/bb_publishers.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/bb_written_by.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Output/bb_written_by.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/bb_authors.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/bb_book_orders.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/bb_books.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/bb_categories.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/bb_employees.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/bb_orders.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/bb_publishers.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/bb_users.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/bb_warehouse_stock.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/bb_warehouses.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/bb_written_by.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Schemas/Bits and Books.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Schemas/Bits and Books.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utility/csv_generator_utility.rb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

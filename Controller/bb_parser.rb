@@ -49,7 +49,8 @@ end
 # FOR TESTING:
 # puts category_array
 
-parser.generate_csv("../Output/bb_categories.csv", category_array)
+parser.generate_csv("../OutputHeaders/bb_categories.csv", category_array, 1)
+parser.generate_csv("../OutputNoHeaders/bb_categories.csv", category_array, 0)
 
 # Creating a Csv of Publishers
 publisher_column = parser.get_column("Publisher")
@@ -72,7 +73,8 @@ end
 # FOR TESTING:
 # puts publisher_array
 
-parser.generate_csv("../Output/bb_publishers.csv", publisher_array)
+parser.generate_csv("../OutputHeaders/bb_publishers.csv", publisher_array, 1)
+parser.generate_csv("../OutputNoHeaders/bb_publishers.csv", publisher_array, 0)
 
 # Creating a CSV of books
 books_array = []
@@ -94,7 +96,8 @@ end
 # FOR TESTING:
 # puts books_array
 
-parser.generate_csv("../Output/bb_books.csv", books_array)
+parser.generate_csv("../OutputHeaders/bb_books.csv", books_array, 1)
+parser.generate_csv("../OutputNoHeaders/bb_books.csv", books_array, 0)
 
 # Creating a CSV of authors
 author_array = []
@@ -159,7 +162,8 @@ end
 # FOR TESTING:
 # puts author_array
 
-parser.generate_csv("../Output/bb_authors.csv", author_array)
+parser.generate_csv("../OutputHeaders/bb_authors.csv", author_array, 1)
+parser.generate_csv("../OutputNoHeaders/bb_authors.csv", author_array, 0)
 
 # Generating Written By CSV
 written_by_array = []
@@ -179,7 +183,8 @@ end
 # FOR TESTING:
 # puts written_by_array
 
-parser.generate_csv("../Output/bb_written_by.csv", written_by_array)
+parser.generate_csv("../OutputHeaders/bb_written_by.csv", written_by_array, 1)
+parser.generate_csv("../OutputNoHeaders/bb_written_by.csv", written_by_array, 0)
 
 # Generating users
 user_counter = 1
@@ -243,7 +248,8 @@ end
 # puts employee_users_array
 # puts customer_users_array
 
-parser.generate_csv("../Output/bb_users.csv", employee_users_array + customer_users_array)
+parser.generate_csv("../OutputHeaders/bb_users.csv", employee_users_array + customer_users_array, 1)
+parser.generate_csv("../OutputNoHeaders/bb_users.csv", employee_users_array + customer_users_array, 0)
 
 order_counter = 1
 bill_numbers = []
@@ -271,7 +277,8 @@ end
 # FOR TESTING:
 # puts order_array
 
-parser.generate_csv("../Output/bb_orders.csv", order_array)
+parser.generate_csv("../OutputHeaders/bb_orders.csv", order_array, 1)
+parser.generate_csv("../OutputNoHeaders/bb_orders.csv", order_array, 0)
 
 # Generating Warehouses
 warehouse_array = []
@@ -290,7 +297,8 @@ end
 # FOR TESTING:
 # puts warehouse_array
 
-parser.generate_csv("../Output/bb_warehouses.csv", warehouse_array)
+parser.generate_csv("../OutputHeaders/bb_warehouses.csv", warehouse_array, 1)
+parser.generate_csv("../OutputNoHeaders/bb_warehouses.csv", warehouse_array, 0)
 
 # Generating Warehouse Stock
 warehouse_stock_array = []
@@ -313,7 +321,8 @@ end
 # FOR TESTING:
 # puts warehouse_stock_array
 
-parser.generate_csv("../Output/bb_warehouse_stock.csv", warehouse_stock_array)
+parser.generate_csv("../OutputHeaders/bb_warehouse_stock.csv", warehouse_stock_array, 1)
+parser.generate_csv("../OutputNoHeaders/bb_warehouse_stock.csv", warehouse_stock_array, 0)
 
 # Generating Book Orders
 book_order_array = []
@@ -339,7 +348,8 @@ end
 # FOR TESTING:
 # puts book_order_array
 
-parser.generate_csv("../Output/bb_book_orders.csv", books_array)
+parser.generate_csv("../OutputHeaders/bb_book_orders.csv", book_order_array, 1)
+parser.generate_csv("../OutputNoHeaders/bb_book_orders.csv", book_order_array, 0)
 
 positions = ["Information Technology", "Human Resources", "Logistics", "Manager", "Transport", "Robotics Engineer"]
 
@@ -355,4 +365,5 @@ end
 # FOR TESTING:
 # puts employee_array
 
-parser.generate_csv("../Output/bb_employees.csv", employee_array)
+parser.generate_csv("../OutputHeaders/bb_employees.csv", employee_array, 1)
+parser.generate_csv("../OutputNoHeaders/bb_employees.csv", employee_array, 0)

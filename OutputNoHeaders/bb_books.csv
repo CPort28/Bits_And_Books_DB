@@ -1,4 +1,3 @@
-isbn;release_year;sales_price;title;pub_id;cat_id
 0782140661;2002;104.97;OCP: Oracle9i Certification Kit;1;1
 0072227885;2003;34.99;SQL Server 2000 for Experienced DBA's;2;1
 0471200247;2002;50.0;The Data Warehouse Toolkit: The Complete Guide to Dimensional Modeling;3;1
@@ -23,7 +22,6 @@ isbn;release_year;sales_price;title;pub_id;cat_id
 0743222008;2003;25.0;The Vanished Man: A Lincoln Rhyme Novel;18;2
 0066214750;2003;25.95;Twelve Times Blessed;19;2
 0787960756;2002;13.2;The Five Dysfunctions of a Team: A Leadership Fable;20;3
-0743206061;2003;26.0;The Second Time Around;18;3
 1590520734;2003;12.99;The Rescuer: The O'Malley Series;21;5
 0060934417;2002;13.95;Bel Canto: A Novel;22;5
 0440237556;2002;6.99;The Dark Highlander;23;5

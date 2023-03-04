@@ -12,6 +12,7 @@ GEM
     reline (0.3.2)
       io-console (~> 0.5)
     rubystats (0.3.0)
+    sqlite3 (1.6.1-x86_64-darwin)
 
 PLATFORMS
   x86_64-darwin-21
@@ -20,6 +21,7 @@ DEPENDENCIES
   faker
   irb
   rubystats
+  sqlite3
 
 BUNDLED WITH
    2.3.23
