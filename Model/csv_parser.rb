@@ -32,16 +32,18 @@ class CsvParser
   #   The keys are the attibute names (column headers) and the values get
   #   written to a csv file by hash
   #
-  def generate_csv(filename, hash_array)
+  def generate_csv(filename, hash_array, headers)
     file = File.open(filename, "w")
     attribute_names = hash_array[0].keys
     
-    # Creating column headers
-    attribute_names.each_with_index do |name,i|
-      if i < (attribute_names.length - 1)
-        file.write(name.to_s + @delimiter)
-      else
-        file.write(name.to_s + "\n")
+    if headers == 1
+      # Creating column headers
+      attribute_names.each_with_index do |name,i|
+        if i < (attribute_names.length - 1)
+          file.write(name.to_s + @delimiter)
+        else
+          file.write(name.to_s + "\n")
+        end
       end
     end
   
