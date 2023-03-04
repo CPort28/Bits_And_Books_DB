@@ -14,7 +14,7 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
-    <data-source name="bits_bobs" uuid="71e06cf1-18ae-40c8-86be-6380acfad59a">
+    <data-source name="Bits_Bobs" uuid="8bb767ce-f87f-4487-ab2f-b472db319c26">
       <database-info product="SQLite" version="3.39.2" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.39.2.0" dbms="SQLITE" exact-version="3.39.2" exact-driver-version="3.39">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>

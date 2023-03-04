@@ -177,7 +177,7 @@ data_hash_array.each_with_index do |row, index|
   isbn = isbn_written_by
   author_id = get_author_id(author_array, row["Author(s)"])
 
-  written_by_array.push({"isbn" => isbn, "author_id" => author_id})
+  written_by_array.push({"author_id" => author_id, "isbn" => isbn})
 end
 
 # FOR TESTING:
@@ -196,7 +196,7 @@ for i in 0...NUM_EMPLOYEES
   user_counter = user_counter + 1
   fname = Faker::Name.first_name
   lname = Faker::Name.last_name
-  name = fname + lname
+  name = fname + " " + lname
   email = "#{fname}.#{lname}#{rand(0..999)}@#{providers.sample}"
   phone_no = Faker::PhoneNumber.cell_phone.delete("-. ()")
   address = Faker::Address.street_address
@@ -220,7 +220,7 @@ for i in 0...NUM_CUSTOMERS
   user_counter = user_counter + 1
   fname = Faker::Name.first_name
   lname = Faker::Name.last_name
-  name = fname + lname
+  name = fname + " " + lname
   email = "#{fname}.#{lname}#{rand(0..999)}@#{providers.sample}"
   phone_no = Faker::PhoneNumber.cell_phone.delete("-. ()")
   address = Faker::Address.street_address
