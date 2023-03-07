@@ -37,11 +37,13 @@ cat_column = parser.get_column("Category")
 category_array = []
 category_names = []
 cat_column.each do |category|
+  # Add each unique category name to the array
   if !category_names.include?(category["Category"]) && category["Category"] != ""
     category_names.push(category["Category"])
   end
 end
 
+# Add each category name, along with an id number to the category hash array
 category_names.each_with_index do |cat_name, index|
   category_array.push({"category_id" => index + 1, "cat_name" => cat_name, "description" => "N/A"})
 end
@@ -57,11 +59,13 @@ publisher_column = parser.get_column("Publisher")
 publisher_array = []
 publisher_names = []
 publisher_column.each do |publisher|
+  # Add each unique publisher name to the array
   if !publisher_names.include?(publisher["Publisher"]) && publisher["Publisher"] != ""
     publisher_names.push(publisher["Publisher"])
   end
 end
 
+# Adding id, unique publisher name, randomly generated phone number, and email computed from publisher name
 publisher_names.each_with_index do |publisher_name, index|
   pub_id = index + 1
   phone_no = Faker::PhoneNumber.cell_phone.delete("-. ()")
@@ -80,13 +84,16 @@ parser.generate_csv("../OutputNoHeaders/bb_publishers.csv", publisher_array, 0)
 books_array = []
 data_hash_array = parser.get_hash_array
 data_hash_array.each_with_index do |row, index|
+  # Only adding to the hash if the row has an isbn
   if row["ISBN"] != ""
     isbn = row["ISBN"]
     release_year = row["Year"]
     sales_price = row["Price"].delete("$").to_f
     title = row["Title"]
+    # Getting the publisher ID of the book
     publisher_hash = publisher_array.select{|hash| hash["pub_name"] == row["Publisher"]}.first
     pub_id = publisher_hash["publisher_id"]
+    # Getting the category ID of the book
     cat_hash = category_array.select{|hash| hash["cat_name"] == row["Category"]}.first
     cat_id = cat_hash["category_id"]
     books_array.push({"isbn" => isbn, "release_year" => release_year,"sales_price" => sales_price, "title" => title, "pub_id" => pub_id, "cat_id" => cat_id})
@@ -103,14 +110,17 @@ parser.generate_csv("../OutputNoHeaders/bb_books.csv", books_array, 0)
 author_array = []
 author_names = []
 data_hash_array.each_with_index do |row, index|
+  # Adding each unique author name to the array
   if !author_names.include?(row["Author(s)"])
     author_names.push(row["Author(s)"])
   end
 end
 
+# Adding to the author hash array for each unique author name
 author_names.each_with_index do |author, index|
   author_id = index + 1
   name = author
+  # Getting fname, lname, and middle initials
   split_name = name.split(" ")
   first_name = split_name[0]
   last_name = split_name[split_name.length - 1]
