@@ -1,110 +1,110 @@
 isbn;release_year;sales_price;title;pub_id;cat_id
-0782140661;2002;104.97;OCP: Oracle9i Certification Kit;1;1
-0072227885;2003;34.99;SQL Server 2000 for Experienced DBA's;2;1
-0471200247;2002;50.0;The Data Warehouse Toolkit: The Complete Guide to Dimensional Modeling;3;1
-0072227710;2003;17.49;How To Do Everything with Your Tablet PC;2;1
+782140661;2002;104.97;OCP: Oracle9i Certification Kit;1;1
+72227885;2003;34.99;SQL Server 2000 for Experienced DBA's;2;1
+471200247;2002;50.0;The Data Warehouse Toolkit: The Complete Guide to Dimensional Modeling;3;1
+72227710;2003;17.49;How To Do Everything with Your Tablet PC;2;1
 1558605525;1999;49.95;Data Mining: Practical Machine Learning Tools and Techniques with Java Implementations;4;1
-0972263608;2002;99.0;Creating Documents with BusinessObjects 5.1;5;1
-0201615762;2000;38.49;The Guru's Guide to Transact-SQL;6;1
-0782140114;2001;69.99;Access 2002 Developer's Handbook Set;1;1
-0321125169;2002;38.49;ColdFusion MX Web Application Construction Kit;7;1
-0805317554;1999;95.0;Fundamentals of Database Systems;8;1
+972263608;2002;99.0;Creating Documents with BusinessObjects 5.1;5;1
+201615762;2000;38.49;The Guru's Guide to Transact-SQL;6;1
+782140114;2001;69.99;Access 2002 Developer's Handbook Set;1;1
+321125169;2002;38.49;ColdFusion MX Web Application Construction Kit;7;1
+805317554;1999;95.0;Fundamentals of Database Systems;8;1
 1861004486;2000;41.99;Professional SQL Server 2000 Programming;9;1
-0735712123;2003;34.99;MySQL;8;1
-0425188361;2003;16.07;Cerulean Sins;10;2
-0142001740;2003;14.0;The Secret Life of Bees;11;2
-0596004478;2003;24.95;Google Hacks;12;1
-0071414339;2003;18.95;"Investing in Fixer-Uppers : A Complete Guide to Buying Low, Fixing Smart, Adding Value, and Selling (or Renting) High";13;3
-0312311354;2003;13.0;The Pianist;14;2
-0312287941;2002;25.95;The Girl in the Red Coat: A Memoir;15;2
-0312243022;2000;3.44;The Hours;14;2
-0609610570;2002;27.5;Execution: The Discipline of Getting Things Done;16;4
-0316602051;2003;27.95;The Jester;17;2
-0743222008;2003;25.0;The Vanished Man: A Lincoln Rhyme Novel;18;2
-0066214750;2003;25.95;Twelve Times Blessed;19;2
-0787960756;2002;13.2;The Five Dysfunctions of a Team: A Leadership Fable;20;3
-0743206061;2003;26.0;The Second Time Around;18;3
+735712123;2003;34.99;MySQL;8;1
+425188361;2003;16.07;Cerulean Sins;10;2
+142001740;2003;14.0;The Secret Life of Bees;11;2
+596004478;2003;24.95;Google Hacks;12;1
+71414339;2003;18.95;"Investing in Fixer-Uppers : A Complete Guide to Buying Low, Fixing Smart, Adding Value, and Selling (or Renting) High";13;3
+312311354;2003;13.0;The Pianist;14;2
+312287941;2002;25.95;The Girl in the Red Coat: A Memoir;15;2
+312243022;2000;3.44;The Hours;14;2
+609610570;2002;27.5;Execution: The Discipline of Getting Things Done;16;4
+316602051;2003;27.95;The Jester;17;2
+743222008;2003;25.0;The Vanished Man: A Lincoln Rhyme Novel;18;2
+66214750;2003;25.95;Twelve Times Blessed;19;2
+787960756;2002;13.2;The Five Dysfunctions of a Team: A Leadership Fable;20;3
+743206061;2003;26.0;The Second Time Around;18;3
 1590520734;2003;12.99;The Rescuer: The O'Malley Series;21;5
-0060934417;2002;13.95;Bel Canto: A Novel;22;5
-0440237556;2002;6.99;The Dark Highlander;23;5
-0373272839;2003;4.75;Letters to Kelly;24;5
-0670031518;2002;27.95;The Blank Slate: The Modern Denial of Human Nature;25;6
-0738206679;2002;26.0;Linked: The New Science of Networks;26;6
-067976867X;1999;15.0;Consilience: The Unity of Knowledge;27;6
-0679450785;2002;22.0;The Future of Life;28;6
+60934417;2002;13.95;Bel Canto: A Novel;22;5
+440237556;2002;6.99;The Dark Highlander;23;5
+373272839;2003;4.75;Letters to Kelly;24;5
+670031518;2002;27.95;The Blank Slate: The Modern Denial of Human Nature;25;6
+738206679;2002;26.0;Linked: The New Science of Networks;26;6
+67976867X;1999;15.0;Consilience: The Unity of Knowledge;27;6
+679450785;2002;22.0;The Future of Life;28;6
 1579550088;2002;44.95;A New Kind of Science;29;6
-0684843285;1997;22.0;ON FOOD AND COOKING;30;6
-0471358983;2000;40.0;Building Construction Illustrated;3;7
-0394739698;1984;24.95;A Field Guide to American Houses;31;7
+684843285;1997;22.0;ON FOOD AND COOKING;30;6
+471358983;2000;40.0;Building Construction Illustrated;3;7
+394739698;1984;24.95;A Field Guide to American Houses;31;7
 1586851322;2002;39.95;Prefab;32;7
 1586851357;2002;60.0;Cabins & Camps;32;7
 156158648X;2003;24.95;The New City Home: Smart Solutions for Metro Living;33;7
-0865659982;1998;50.0;Composers' Houses;34;7
-0517576600;1992;50.0;Color: Natural Palettes for Painted Rooms;35;7
-0262024829;2000;70.0;Financial Modeling;36;3
-0072294337;2001;122.5;Financial Markets & Corporate Strategy;37;3
-0072315318;2000;79.2;Analysis for Financial Management;37;3
-0324107501;2001;112.95;Advanced Accounting;38;3
-0471363049;2001;139.2;Intermediate Accounting;3;3
-0130323519;2001;126.67;Financial Reporting and Analysis;39;3
-0446527793;2003;24.95;The Guardian;40;2
-0743206061;2003;26.0;The Second Time Around;18;2
-0743244249;2003;25.0;Cosmopolis: A Novel;41;2
-0743467523;2003;7.99;Dreamcatcher;42;8
-0375703764;2000;19.95;House of Leaves;43;8
-0345452089;2003;6.99;The Vampire's Violin;44;8
-0385504470;2002;17.47;Lullaby: A Novel;45;8
-0312276702;2003;24.95;Jinn: A Novel;15;8
-0743457358;2002;7.99;Everything's Eventual: 14 Dark Tales;42;8
+865659982;1998;50.0;Composers' Houses;34;7
+517576600;1992;50.0;Color: Natural Palettes for Painted Rooms;35;7
+262024829;2000;70.0;Financial Modeling;36;3
+72294337;2001;122.5;Financial Markets & Corporate Strategy;37;3
+72315318;2000;79.2;Analysis for Financial Management;37;3
+324107501;2001;112.95;Advanced Accounting;38;3
+471363049;2001;139.2;Intermediate Accounting;3;3
+130323519;2001;126.67;Financial Reporting and Analysis;39;3
+446527793;2003;24.95;The Guardian;40;2
+743206061;2003;26.0;The Second Time Around;18;2
+743244249;2003;25.0;Cosmopolis: A Novel;41;2
+743467523;2003;7.99;Dreamcatcher;42;8
+375703764;2000;19.95;House of Leaves;43;8
+345452089;2003;6.99;The Vampire's Violin;44;8
+385504470;2002;17.47;Lullaby: A Novel;45;8
+312276702;2003;24.95;Jinn: A Novel;15;8
+743457358;2002;7.99;Everything's Eventual: 14 Dark Tales;42;8
 1880418568;2003;35.0;Wolves of the Calla;46;8
-0743455967;2002;7.99;On Writing;42;8
-0140077022;1991;14.0;White Noise;11;2
-0679722955;1989;11.2;The Names;47;2
-0684848155;1998;16.0;UNDERWORLD: A NOVEL;48;2
-0471286168;1996;39.95;"Architecture: Form, Space, and Order";3;7
-0471288217;1996;39.95;A Visual Dictionary of Architecture;3;7
-0156006219;1998;13.0;The Magician's Assistant;49;5
-0060540753;2003;13.95;Patron Saint of Liars;50;5
-0393318486;1999;17.95;How the Mind Works;51;6
-0060958332;2000;10.5;The Language Instinct: How the Mind Creates Language;22;6
-0060958405;2000;15.0;Words and Rules: The Ingredients of Language;22;6
-0393319407;1999;16.95;The Diversity of Life;51;6
-067463442X;1988;18.95;On Human Nature;52;6
-0446608955;2000;6.99;A Walk to Remember;40;2
-0446676098;1999;12.95;The Notebook;40;2
-0446606812;1999;7.5;Message in a Bottle;40;2
-0262521415;1989;35.0;Numerical Techniques in Finance;36;3
-0262232197;2001;74.95;Econometric Analysis of Cross Section and Panel Data;36;3
-0324113641;2002;107.95;Introductory Econometrics: A Modern Approach;38;3
-0471391123;2000;50.0;Beyond Coso : Internal Control to Enhance Corporate Governance;3;3
-0130998516;1999;83.0;Real World FPGA Design with Verilog;53;1
+743455967;2002;7.99;On Writing;42;8
+140077022;1991;14.0;White Noise;11;2
+679722955;1989;11.2;The Names;47;2
+684848155;1998;16.0;UNDERWORLD: A NOVEL;48;2
+471286168;1996;39.95;"Architecture: Form, Space, and Order";3;7
+471288217;1996;39.95;A Visual Dictionary of Architecture;3;7
+156006219;1998;13.0;The Magician's Assistant;49;5
+60540753;2003;13.95;Patron Saint of Liars;50;5
+393318486;1999;17.95;How the Mind Works;51;6
+60958332;2000;10.5;The Language Instinct: How the Mind Creates Language;22;6
+60958405;2000;15.0;Words and Rules: The Ingredients of Language;22;6
+393319407;1999;16.95;The Diversity of Life;51;6
+67463442X;1988;18.95;On Human Nature;52;6
+446608955;2000;6.99;A Walk to Remember;40;2
+446676098;1999;12.95;The Notebook;40;2
+446606812;1999;7.5;Message in a Bottle;40;2
+262521415;1989;35.0;Numerical Techniques in Finance;36;3
+262232197;2001;74.95;Econometric Analysis of Cross Section and Panel Data;36;3
+324113641;2002;107.95;Introductory Econometrics: A Modern Approach;38;3
+471391123;2000;50.0;Beyond Coso : Internal Control to Enhance Corporate Governance;3;3
+130998516;1999;83.0;Real World FPGA Design with Verilog;53;1
 1565924916;2003;39.95;Ldap System Administration;12;1
-0735712360;2003;39.99;The Photoshop Book for Digital Photographers;54;1
-0735712379;2002;39.99;Photoshop 7 Down & Dirty Tricks;54;1
-0735713170;2002;29.99;Mac OS X v. 10.2 Jaguar Killer Tips;54;1
+735712360;2003;39.99;The Photoshop Book for Digital Photographers;54;1
+735712379;2002;39.99;Photoshop 7 Down & Dirty Tricks;54;1
+735713170;2002;29.99;Mac OS X v. 10.2 Jaguar Killer Tips;54;1
 1558606432;2002;34.95;Persuasive Technology: Using Computers to Change What We Think and Do;4;1
-0072222743;2002;59.99;A+ Certification All-in-One Exam Guide;2;1
-0345409469;1997;14.95;The Demon-Haunted World: Science As a Candle in the Dark;55;6
-0375508325;2002;35.0;Cosmos;27;6
-0345336895;1993;6.99;Broca's Brain: Reflections on the Romance of Science;55;6
-0671004107;1997;7.99;Contact;42;6
-0345376595;1997;12.95;Pale Blue Dot: A Vision of the Human Future in Space;55;6
-0316666343;2002;21.95;The Lovely Bones: A Novel;17;2
-0316096199;2002;11.95;Lucky: A Memoir;56;2
-038572179X;2003;14.0;Atonement;57;2
-0385494246;1999;12.0;Amsterdam;57;2
-0385494327;1999;14.0;Black Dogs;57;2
-0385494149;1999;13.0;Enduring Love;57;2
-0399149848;2003;25.95;Birthright;58;2
-0373218192;2003;7.5;Engaging The Enemy;59;2
-0373218257;2003;14.95;Love By Design;24;2
-0399149392;2002;25.95;Chesapeake Blue;58;2
+72222743;2002;59.99;A+ Certification All-in-One Exam Guide;2;1
+345409469;1997;14.95;The Demon-Haunted World: Science As a Candle in the Dark;55;6
+375508325;2002;35.0;Cosmos;27;6
+345336895;1993;6.99;Broca's Brain: Reflections on the Romance of Science;55;6
+671004107;1997;7.99;Contact;42;6
+345376595;1997;12.95;Pale Blue Dot: A Vision of the Human Future in Space;55;6
+316666343;2002;21.95;The Lovely Bones: A Novel;17;2
+316096199;2002;11.95;Lucky: A Memoir;56;2
+38572179X;2003;14.0;Atonement;57;2
+385494246;1999;12.0;Amsterdam;57;2
+385494327;1999;14.0;Black Dogs;57;2
+385494149;1999;13.0;Enduring Love;57;2
+399149848;2003;25.95;Birthright;58;2
+373218192;2003;7.5;Engaging The Enemy;59;2
+373218257;2003;14.95;Love By Design;24;2
+399149392;2002;25.95;Chesapeake Blue;58;2
 1561584029;2001;39.95;The Complete Illustrated Guide to Furniture and Cabinet Construction;33;7
 1579902944;2002;19.95;Choosing & Using Hand Tools;60;7
 1561586196;2003;19.95;Building a Shed;33;7
-0061092177;1994;7.99;Small Gods;61;9
-0060502935;2005;7.99;Going Postal;61;9
-0061020656;2001;7.99;Pyramids;61;9
-0060855925;2005;13.99;The Color of Magic;61;9
-0061020648;2001;7.99;Guards! Guards!;61;9
-0061161721;2010;7.99;Unseen Academicals;61;9
+61092177;1994;7.99;Small Gods;61;9
+60502935;2005;7.99;Going Postal;61;9
+61020656;2001;7.99;Pyramids;61;9
+60855925;2005;13.99;The Color of Magic;61;9
+61020648;2001;7.99;Guards! Guards!;61;9
+61161721;2010;7.99;Unseen Academicals;61;9

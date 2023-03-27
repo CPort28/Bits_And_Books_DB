@@ -13,5 +13,7 @@ sqlite3 ../db/$1 <<'END_SQL'
 .import ../OutputNoHeaders/bb_book_orders.csv BOOK_ORDER
 .import ../OutputNoHeaders/bb_warehouse_stock.csv WAREHOUSE_STOCK
 .import ../OutputNoHeaders/bb_employees.csv EMPLOYEE
+.import ../OutputNoHeaders/bb_addresses.csv ADDRESS
+.import ../OutputNoHeaders/bb_names.csv NAME
 .quit
 END_SQL

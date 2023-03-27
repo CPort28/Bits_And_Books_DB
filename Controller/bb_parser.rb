@@ -5,10 +5,9 @@ require 'date'
 require 'rubystats'
 Faker::Config.locale = 'en-US'
 
-
 # Config
 NUM_CUSTOMERS = 100
-NUM_EMPLOYEES = 10
+NUM_EMPLOYEES = 20
 MAX_ORDER_PER_CUSTOMER = 5
 MIN_ORDER_PER_CUSTOMER = 0
 MAX_DIFF_BOOKS_PER_ORDER = 10
@@ -20,8 +19,13 @@ START_SALES_DATE = "2010-01-01"
 END_SALES_DATE = Date.today
 RESERVE_SPACE = 500
 
-def get_author_id(auth_arr, auth_name)
-  author = auth_arr.select {|auth_hash| auth_hash["name"] == auth_name}.first
+name_hash_array = []
+name_id_counter = 1
+address_hash_array = []
+address_id_counter = 1
+
+def get_author_id(auth_id_arr, auth_name)
+  author = auth_id_arr.select {|auth_hash| auth_hash["name"] == auth_name}.first
   author["author_id"]
 end
 
@@ -109,6 +113,7 @@ parser.generate_csv("../OutputNoHeaders/bb_books.csv", books_array, 0)
 # Creating a CSV of authors
 author_array = []
 author_names = []
+auth_id_array = []
 data_hash_array.each_with_index do |row, index|
   # Adding each unique author name to the array
   if !author_names.include?(row["Author(s)"])
@@ -165,8 +170,12 @@ author_names.each_with_index do |author, index|
     end
   end
 
-  author_array.push({"author_id" => author_id, "name" => name, "first_name" => first_name, 
-    "last_name" => last_name, "middle_inits" => middle_inits, "birth_date" => birth_date, "death_date" => death_date})
+  author_array.push({"author_id" => author_id, "name_id" => name_id_counter, 
+    "birth_date" => birth_date, "death_date" => death_date})
+  name_hash_array.push({"name_id" => name_id_counter, "fname" => first_name,
+    "lname" => last_name, "middle_inits" => middle_inits})
+  auth_id_array.push({"author_id" => author_id, "name" => name})
+  name_id_counter = name_id_counter + 1
 end
 
 # FOR TESTING:
@@ -185,7 +194,7 @@ data_hash_array.each_with_index do |row, index|
   end
 
   isbn = isbn_written_by
-  author_id = get_author_id(author_array, row["Author(s)"])
+  author_id = get_author_id(auth_id_array, row["Author(s)"])
 
   written_by_array.push({"author_id" => author_id, "isbn" => isbn})
 end
@@ -200,13 +209,13 @@ parser.generate_csv("../OutputNoHeaders/bb_written_by.csv", written_by_array, 0)
 user_counter = 1
 customer_users_array = []
 employee_users_array = []
+# Generating employees
 providers = ["bitsbooks.com"]
 for i in 0...NUM_EMPLOYEES
   user_id = user_counter
   user_counter = user_counter + 1
   fname = Faker::Name.first_name
   lname = Faker::Name.last_name
-  name = fname + " " + lname
   email = "#{fname}.#{lname}#{rand(0..999)}@#{providers.sample}"
   phone_no = Faker::PhoneNumber.cell_phone.delete("-. ()")
   address = Faker::Address.street_address
@@ -218,12 +227,16 @@ for i in 0...NUM_EMPLOYEES
   country = "USA"
   state = Faker::Address.state_abbr
   zip = Faker::Address.postcode
-  employee_users_array.push({"user_id" => user_id, "name" => name, "fname" => fname, 
-    "lname" => lname, "email" => email, "phone_no" => phone_no, "address" => address, 
-    "secondary_address" => secondary_address, "city" => city, "state" => state,
-    "zip" => zip, "country" => country})
+  employee_users_array.push({"user_id" => user_id, "name_id" => name_id_counter, "email" => email, 
+    "phone_no" => phone_no, "address_id" => address_id_counter})
+  name_hash_array.push({"name_id" => name_id_counter, "fname" => fname, "middle_inits" => nil, "lname" => lname})
+  address_hash_array.push({"address_id" => address_id_counter, "address" => address, 
+    "secondary_address" => secondary_address, "city" => city, "state" => state, "zip" => zip, "country" => country})
+  name_id_counter = name_id_counter + 1
+  address_id_counter = address_id_counter + 1
 end
 
+# Generating customers
 providers = ["gmail.com", "hotmail.com", "yahoo.com"]
 for i in 0...NUM_CUSTOMERS
   user_id = user_counter
@@ -248,10 +261,13 @@ for i in 0...NUM_CUSTOMERS
     state = Faker::Address.state_abbr
   end
   zip = Faker::Address.postcode
-  customer_users_array.push({"user_id" => user_id, "name" => name, "fname" => fname, 
-    "lname" => lname, "email" => email, "phone_no" => phone_no, "address" => address, 
-    "secondary_address" => secondary_address, "city" => city, "state" => state,
-    "zip" => zip, "country" => country})
+  customer_users_array.push({"user_id" => user_id, "name_id" => name_id_counter, "email" => email, 
+    "phone_no" => phone_no, "address_id" => address_id_counter})
+  name_hash_array.push({"name_id" => name_id_counter, "fname" => fname, "middle_inits" => nil, "lname" => lname})
+  address_hash_array.push({"address_id" => address_id_counter, "address" => address, 
+    "secondary_address" => secondary_address, "city" => city, "state" => state, "zip" => zip, "country" => country})
+  name_id_counter = name_id_counter + 1
+  address_id_counter = address_id_counter + 1
 end
 
 # FOR TESTING:
@@ -300,8 +316,11 @@ for i in 0...WAREHOUSES
   zip = Faker::Address.postcode
   country = "USA"
   total_capacity = rand(2000..8000)
-  warehouse_array.push({"warehouse_id" => warehouse_id, "address" => address, "city" => city, 
-    "state" => state, "zip" => zip, "country" => country, "total_capacity" => total_capacity})
+  warehouse_array.push({"warehouse_id" => warehouse_id, "address_id" => address_id_counter, 
+    "total_capacity" => total_capacity})
+  address_hash_array.push({"address_id" => address_id_counter, "address" => address, 
+    "secondary_address" => nil, "city" => city, "state" => state, "zip" => zip, "country" => country})
+  address_id_counter = address_id_counter + 1
 end
 
 # FOR TESTING:
@@ -377,3 +396,9 @@ end
 
 parser.generate_csv("../OutputHeaders/bb_employees.csv", employee_array, 1)
 parser.generate_csv("../OutputNoHeaders/bb_employees.csv", employee_array, 0)
+
+# Generating final name and address csvs
+parser.generate_csv("../OutputHeaders/bb_names.csv", name_hash_array, 1)
+parser.generate_csv("../OutputNoHeaders/bb_names.csv", name_hash_array, 0)
+parser.generate_csv("../OutputHeaders/bb_addresses.csv", address_hash_array, 1)
+parser.generate_csv("../OutputNoHeaders/bb_addresses.csv", address_hash_array, 0)

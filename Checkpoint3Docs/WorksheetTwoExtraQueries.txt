@@ -1,0 +1,56 @@
+
+Query 1:
+  Find the author that has sold the most books through B&B
+
+  Relational Algebra:
+    TOTAL_SALES_BY_BOOK ← isbn F SUM quantity (BOOK_ORDER)
+    ρ (isbn, copies_sold) (TOTAL_SALES_BY_BOOK)
+    BOOKS_BY_AUTHOR ← (WRITTEN_BY * AUTHOR)
+    SALES_BY_AUTHOR_BY_BOOK ← (TOTAL_SALES_BY_BOOK * BOOKS_BY_AUTHOR) 
+    TOTAL_AUTHOR_SALES ← author_id F SUM copies_sold (SALES_BY_AUTHOR) 
+    MAX_AUTHOR_SALES ← F MAX Sum_copies_sold (TOTAL_AUTHOR_SALES)
+
+  SQL:
+    FROM AUTHOR A
+    JOIN NAME AName on A.name_id = AName.name_id
+    JOIN WRITTEN_BY WB on A.author_id = WB.author_id
+    JOIN BOOK B on WB.isbn = B.isbn
+    JOIN BOOK_ORDER BO on B.isbn = BO.isbn
+    GROUP BY A.author_id
+    HAVING books_sold = (SELECT max(b_sold)
+                        FROM (SELECT sum(BO.quantity) as b_sold
+                              FROM AUTHOR A
+                              JOIN WRITTEN_BY WB on A.author_id = WB.author_id
+                              JOIN BOOK B on WB.isbn = B.isbn
+                              JOIN BOOK_ORDER BO on B.isbn = BO.isbn
+                              GROUP BY A.author_id));
+
+Query 2:
+  Check which warehouses have enough stock to order 40 copies
+  of a book(given the isbn, “x”)
+
+  Relational Algebra:
+    TOTAL_STOCK_BY_WAREHOUSE ← WAREHOUSE * WAREHOUSE_STOCK
+    σ isbn = x ∧ quantity ≥ 40 (TOTAL_STOCK_BY_WAREHOUSE)
+
+  SQL:
+    SELECT B.isbn, WAdd.address, WAdd.city, WAdd.state, WS.quantity
+    FROM BOOK B
+    JOIN WAREHOUSE_STOCK WS on B.isbn = WS.isbn
+    JOIN WAREHOUSE W on WS.warehouse_id = W.warehouse_id
+    JOIN ADDRESS WAdd on W.address_id = WAdd.address_id
+    WHERE B.isbn = 312287941 AND WS.quantity >= 40;
+
+Query 3:
+  Determine the total revenue of the bookstore
+
+  Relational Algebra:
+    ORDER_USER ← ORDER ⨝ customer_id = user_id USER
+    BOOK_ORDER_USER ← BOOK_ORDER * ORDER_USER
+    RESULT ← F SUM total_price (BOOK_ORDER_USER)
+  
+  SQL:
+    SELECT  sum(B.sales_price * BO.quantity) as total_sales
+    FROM BOOK B
+    JOIN BOOK_ORDER BO on B.isbn = BO.isbn
+    JOIN "ORDER" O on BO.order_id = O.order_id;

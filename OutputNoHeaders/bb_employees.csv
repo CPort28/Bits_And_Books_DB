@@ -1,10 +1,20 @@
-1;2;Logistics
-2;2;Transport
-3;2;Transport
-4;1;Transport
-5;2;Manager
-6;1;Information Technology
-7;1;Information Technology
-8;2;Information Technology
-9;2;Information Technology
-10;1;Logistics
+1;2;Transport
+2;1;Robotics Engineer
+3;2;Human Resources
+4;1;Logistics
+5;1;Human Resources
+6;2;Human Resources
+7;2;Manager
+8;1;Information Technology
+9;2;Manager
+10;2;Information Technology
+11;1;Manager
+12;1;Manager
+13;2;Robotics Engineer
+14;1;Transport
+15;1;Manager
+16;2;Robotics Engineer
+17;1;Robotics Engineer
+18;2;Information Technology
+19;1;Robotics Engineer
+20;2;Logistics

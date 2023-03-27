@@ -18,5 +18,13 @@ class Book
     @popularity_rating = rand(1..100)
   end
 
+  def get_isbn
+    @isbn
+  end
+
+  def get_book_as_hash
+    
+  end
+
 
 end
