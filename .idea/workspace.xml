@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="982548bb-3267-4245-97df-b7376ab8e55b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Checkpoint3Docs/WorksheetTwoExtraQueries.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Checkpoint3Docs/WorksheetTwoExtraQueries.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Checkpoint3Docs/WorksheetTwoSimpleQueries.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Checkpoint3Docs/WorksheetTwoSimpleQueries.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/Bits_Bobs.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/db/Bits_Bobs.sqlite" afterDir="false" />
-    </list>
+    <list default="true" id="982548bb-3267-4245-97df-b7376ab8e55b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
