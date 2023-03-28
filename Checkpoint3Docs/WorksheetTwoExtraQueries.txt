@@ -34,12 +34,13 @@
     -- σ isbn = x ∧ quantity ≥ 40 (TOTAL_STOCK_BY_WAREHOUSE)
 
   -- SQL:
-    SELECT B.isbn, WAdd.address, WAdd.city, WAdd.state, WS.quantity
+    -- Book specified by isbn 596004478 in this example
+    SELECT B.isbn, WAdd.address as warehouse_addr, WAdd.city, WAdd.state, WS.quantity as stock
     FROM BOOK B
     JOIN WAREHOUSE_STOCK WS on B.isbn = WS.isbn
     JOIN WAREHOUSE W on WS.warehouse_id = W.warehouse_id
     JOIN ADDRESS WAdd on W.address_id = WAdd.address_id
-    WHERE B.isbn = 312287941 AND WS.quantity >= 40;
+    WHERE B.isbn = 596004478 AND WS.quantity >= 40;
 
 -- Query 3:
   -- Determine the total revenue of the bookstore

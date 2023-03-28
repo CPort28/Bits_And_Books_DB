@@ -6,7 +6,7 @@ require 'rubystats'
 Faker::Config.locale = 'en-US'
 
 # Config
-NUM_CUSTOMERS = 100
+NUM_CUSTOMERS = 150
 NUM_EMPLOYEES = 20
 MAX_ORDER_PER_CUSTOMER = 5
 MIN_ORDER_PER_CUSTOMER = 0
@@ -14,7 +14,8 @@ MAX_DIFF_BOOKS_PER_ORDER = 10
 MIN_DIFF_BOOKS_PER_ORDER = 1
 MAX_BOOK_ORDER_QUANTITY = 3
 MIN_BOOK_ORDER_QUANTITY = 1
-WAREHOUSES = 2
+WAREHOUSES_IN_USE = 2
+TOTAL_WAREHOUSES = 20
 START_SALES_DATE = "2010-01-01"
 END_SALES_DATE = Date.today
 RESERVE_SPACE = 500
@@ -308,7 +309,7 @@ parser.generate_csv("../OutputNoHeaders/bb_orders.csv", order_array, 0)
 
 # Generating Warehouses
 warehouse_array = []
-for i in 0...WAREHOUSES
+for i in 0...TOTAL_WAREHOUSES
   warehouse_id = i + 1
   address = Faker::Address.street_address
   city = Faker::Address.city
@@ -335,10 +336,11 @@ warehouse_array.each_with_index do |warehouse, index|
   moving_capacity = warehouse["total_capacity"]
   average_book_stock = (warehouse["total_capacity"] - RESERVE_SPACE) / books_array.length
   book_stock_dev = 50
+  warehouse_id = warehouse["warehouse_id"]
+  break if warehouse_id > WAREHOUSES_IN_USE
   norm = Rubystats::NormalDistribution.new(average_book_stock, book_stock_dev)
   books_array.each_with_index do |book, index2|
     isbn = book["isbn"]
-    warehouse_id = warehouse["warehouse_id"]
     quantity = norm.rng.to_i.abs
     if moving_capacity < quantity
       quantity = moving_capacity
@@ -358,7 +360,7 @@ book_order_array = []
 order_array.each_with_index do |order, index|
   books_ordered = []
   order_id = order["order_id"]
-  warehouse_id = rand(1..WAREHOUSES)
+  warehouse_id = rand(1..WAREHOUSES_IN_USE)
   for i in 0...rand(MIN_DIFF_BOOKS_PER_ORDER..MAX_DIFF_BOOKS_PER_ORDER)
     # selecting book
     unique_book = 0
@@ -386,7 +388,7 @@ positions = ["Information Technology", "Human Resources", "Logistics", "Manager"
 employee_array = []
 employee_users_array.each_with_index do |emp_user, index|
   employee_id = emp_user["user_id"]
-  warehouse_id = rand(1..WAREHOUSES)
+  warehouse_id = rand(1..WAREHOUSES_IN_USE)
   position = positions.sample
   employee_array.push({"employee_id" => employee_id, "warehouse_id" => warehouse_id, "position" => position})
 end
