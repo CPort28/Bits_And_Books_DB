@@ -85,9 +85,21 @@ end
 parser.generate_csv("../OutputHeaders/bb_publishers.csv", publisher_array, 1)
 parser.generate_csv("../OutputNoHeaders/bb_publishers.csv", publisher_array, 0)
 
+data_hash_array = parser.get_hash_array
+
+# Setting all ISBN's to 13 characters
+data_hash_array.each_with_index do |row, index|
+  if row["ISBN"] != ""
+    while row["ISBN"].length < 13
+      added_zero = row["ISBN"].prepend("0")
+      data_hash_array[index]["ISBN"] = added_zero
+    end
+  end
+end
+
 # Creating a CSV of books
 books_array = []
-data_hash_array = parser.get_hash_array
+book_categories = []
 data_hash_array.each_with_index do |row, index|
   # Only adding to the hash if the row has an isbn
   if row["ISBN"] != ""
@@ -101,7 +113,10 @@ data_hash_array.each_with_index do |row, index|
     # Getting the category ID of the book
     cat_hash = category_array.select{|hash| hash["cat_name"] == row["Category"]}.first
     cat_id = cat_hash["category_id"]
-    books_array.push({"isbn" => isbn, "release_year" => release_year,"sales_price" => sales_price, "title" => title, "pub_id" => pub_id, "cat_id" => cat_id})
+    book_categories.push({"isbn" => isbn, "category_id" => cat_id})
+    if !books_array.any? {|h| h["isbn"] == isbn}
+      books_array.push({"isbn" => isbn, "release_year" => release_year, "sales_price" => sales_price, "title" => title, "pub_id" => pub_id})
+    end
   end
 end
 

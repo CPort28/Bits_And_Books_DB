@@ -6,7 +6,6 @@ filename = "../db/#{filename}"
 db = SQLite3::Database.new(filename)
 
 db.execute <<-SQL
-  -- Creating Entities
   CREATE TABLE CATEGORY (
     category_id INTEGER NOT NULL PRIMARY KEY,
     cat_name VARCHAR(20) NOT NULL,
@@ -25,14 +24,12 @@ SQL
 
 db.execute <<-SQL
   CREATE TABLE BOOK (
-    isbn VARCHAR(13) NOT NULL PRIMARY KEY,
+    isbn CHAR(13) NOT NULL PRIMARY KEY,
     release_year INTEGER(4) NOT NULL,
     sales_price DECIMAL(10,2) NOT NULL,
     title VARCHAR(255) NOT NULL,
     publisher_id INTEGER NOT NULL,
-    category_id INTEGER NOT NULL,
-    FOREIGN KEY (publisher_id) REFERENCES PUBLISHER(publisher_id),
-    FOREIGN KEY (category_id) REFERENCES CATEGORY(category_id)
+    FOREIGN KEY (publisher_id) REFERENCES PUBLISHER(publisher_id)
   );
 SQL
 
@@ -58,7 +55,7 @@ SQL
 db.execute <<-SQL
   CREATE TABLE WRITTEN_BY (
     author_id INTEGER NOT NULL,
-    isbn VARCHAR(13) NOT NULL,
+    isbn CHAR(13) NOT NULL,
     FOREIGN KEY(author_id) REFERENCES AUTHOR(author_id),
     FOREIGN KEY(isbn) REFERENCES BOOK(isbn)
   );
@@ -110,7 +107,7 @@ SQL
 db.execute <<-SQL
   CREATE TABLE BOOK_ORDER (
     warehouse_id INTEGER NOT NULL,
-    isbn VARCHAR(13) NOT NULL,
+    isbn CHAR(13) NOT NULL,
     order_id INTEGER NOT NULL,
     quantity INTEGER NOT NULL,
     FOREIGN KEY (warehouse_id) REFERENCES WAREHOUSE (warehouse_id),
@@ -121,7 +118,7 @@ SQL
 
 db.execute <<-SQL
   CREATE TABLE WAREHOUSE_STOCK (
-    isbn INTEGER(13) NOT NULL,
+    isbn CHAR(13) NOT NULL,
     warehouse_id INTEGER NOT NULL,
     quantity INTEGER,
     FOREIGN KEY (isbn) REFERENCES BOOK (isbn),
