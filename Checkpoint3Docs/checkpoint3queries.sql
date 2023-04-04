@@ -18,7 +18,7 @@ JOIN USER U on O.customer_id = U.user_id
 WHERE U.user_id = 50;
 
 -- c. Find the titles and ISBNs for all books with less than 5 copies in stock
--- NOTE: only one book has less than 5 in stock (House of leaves)
+-- NOTE: only one book has less than 5 in stock (Architecture: Form, Space, and Order)
 SELECT B.title, B.isbn, sum(WS.quantity) AS stock
 FROM BOOK B
 JOIN WAREHOUSE_STOCK WS on B.isbn = WS.isbn
