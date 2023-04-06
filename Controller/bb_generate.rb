@@ -34,6 +34,15 @@ db.execute <<-SQL
 SQL
 
 db.execute <<-SQL
+  CREATE TABLE BOOK_CATEGORY (
+    isbn CHAR(13) NOT NULL,
+    category_id INTEGER NOT NULL,
+    FOREIGN KEY (isbn) REFERENCES BOOK(isbn),
+    FOREIGN KEY (category_id) REFERENCES CATEGORY(category_id)
+  );
+SQL
+
+db.execute <<-SQL
   CREATE TABLE AUTHOR (
     author_id INTEGER NOT NULL PRIMARY KEY,
     name_id INTEGER NOT NULL,

@@ -5,6 +5,7 @@ sqlite3 ../db/$1 <<'END_SQL'
 .import ../OutputNoHeaders/bb_categories.csv CATEGORY
 .import ../OutputNoHeaders/bb_publishers.csv PUBLISHER
 .import ../OutputNoHeaders/bb_books.csv BOOK
+.import ../OutputNoHeaders/bb_book_categories.csv BOOK_CATEGORY
 .import ../OutputNoHeaders/bb_authors.csv AUTHOR
 .import ../OutputNoHeaders/bb_written_by.csv WRITTEN_BY
 .import ../OutputNoHeaders/bb_users.csv USER

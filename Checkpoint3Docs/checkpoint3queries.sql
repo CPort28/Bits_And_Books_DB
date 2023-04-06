@@ -18,7 +18,7 @@ JOIN USER U on O.customer_id = U.user_id
 WHERE U.user_id = 50;
 
 -- c. Find the titles and ISBNs for all books with less than 5 copies in stock
--- NOTE: only one book has less than 5 in stock (Architecture: Form, Space, and Order)
+-- NOTE: only one book has less than 5 in stock (ColdFusion)
 SELECT B.title, B.isbn, sum(WS.quantity) AS stock
 FROM BOOK B
 JOIN WAREHOUSE_STOCK WS on B.isbn = WS.isbn
@@ -86,7 +86,7 @@ FROM BOOK B
 JOIN WAREHOUSE_STOCK WS on B.isbn = WS.isbn
 JOIN WAREHOUSE W on WS.warehouse_id = W.warehouse_id
 JOIN ADDRESS WAdd on W.address_id = WAdd.address_id
-WHERE B.isbn = 596004478 AND WS.quantity >= 40;
+WHERE B.isbn = '0000596004478' AND WS.quantity >= 40;
 
 -- 3) Determine the total revenue of the bookstore
 SELECT  sum(B.sales_price * BO.quantity) as total_sales

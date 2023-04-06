@@ -125,6 +125,8 @@ end
 
 parser.generate_csv("../OutputHeaders/bb_books.csv", books_array, 1)
 parser.generate_csv("../OutputNoHeaders/bb_books.csv", books_array, 0)
+parser.generate_csv("../OutputHeaders/bb_book_categories.csv", book_categories, 1)
+parser.generate_csv("../OutputNoHeaders/bb_book_categories.csv", book_categories, 0)
 
 # Creating a CSV of authors
 author_array = []
@@ -211,8 +213,14 @@ data_hash_array.each_with_index do |row, index|
 
   isbn = isbn_written_by
   author_id = get_author_id(auth_id_array, row["Author(s)"])
-
-  written_by_array.push({"author_id" => author_id, "isbn" => isbn})
+  hash_to_add = {"author_id" => author_id, "isbn" => isbn}
+  if written_by_array.include? hash_to_add
+    puts "Hash #{hash_to_add} already in array"
+  else
+    puts "Hash #{hash_to_add} being added to array"
+    written_by_array.push(hash_to_add) if !written_by_array.include? hash_to_add
+  end
+  
 end
 
 # FOR TESTING:
