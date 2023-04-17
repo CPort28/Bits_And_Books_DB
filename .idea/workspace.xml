@@ -5,41 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="982548bb-3267-4245-97df-b7376ab8e55b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/OutputHeaders/bb_book_categories.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OutputNoHeaders/bb_book_categories.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/download_covers.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5488d910-61a9-4c35-9798-e349cc9295ba.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5488d910-61a9-4c35-9798-e349cc9295ba.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Checkpoint3Docs/checkpoint3queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Checkpoint3Docs/checkpoint3queries.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/bb_generate.rb" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/bb_generate.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/bb_parser.rb" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/bb_parser.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/gen_new_seed.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/gen_new_seed.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/gen_old_seed.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/gen_old_seed.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OutputHeaders/bb_addresses.csv" beforeDir="false" afterPath="$PROJECT_DIR$/OutputHeaders/bb_addresses.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OutputHeaders/bb_authors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/OutputHeaders/bb_authors.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OutputHeaders/bb_book_orders.csv" beforeDir="false" afterPath="$PROJECT_DIR$/OutputHeaders/bb_book_orders.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OutputHeaders/bb_employees.csv" beforeDir="false" afterPath="$PROJECT_DIR$/OutputHeaders/bb_employees.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OutputHeaders/bb_names.csv" beforeDir="false" afterPath="$PROJECT_DIR$/OutputHeaders/bb_names.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OutputHeaders/bb_orders.csv" beforeDir="false" afterPath="$PROJECT_DIR$/OutputHeaders/bb_orders.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OutputHeaders/bb_publishers.csv" beforeDir="false" afterPath="$PROJECT_DIR$/OutputHeaders/bb_publishers.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OutputHeaders/bb_users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/OutputHeaders/bb_users.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OutputHeaders/bb_warehouse_stock.csv" beforeDir="false" afterPath="$PROJECT_DIR$/OutputHeaders/bb_warehouse_stock.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OutputHeaders/bb_warehouses.csv" beforeDir="false" afterPath="$PROJECT_DIR$/OutputHeaders/bb_warehouses.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OutputHeaders/bb_written_by.csv" beforeDir="false" afterPath="$PROJECT_DIR$/OutputHeaders/bb_written_by.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OutputNoHeaders/bb_addresses.csv" beforeDir="false" afterPath="$PROJECT_DIR$/OutputNoHeaders/bb_addresses.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OutputNoHeaders/bb_authors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/OutputNoHeaders/bb_authors.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OutputNoHeaders/bb_book_orders.csv" beforeDir="false" afterPath="$PROJECT_DIR$/OutputNoHeaders/bb_book_orders.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OutputNoHeaders/bb_employees.csv" beforeDir="false" afterPath="$PROJECT_DIR$/OutputNoHeaders/bb_employees.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OutputNoHeaders/bb_names.csv" beforeDir="false" afterPath="$PROJECT_DIR$/OutputNoHeaders/bb_names.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OutputNoHeaders/bb_orders.csv" beforeDir="false" afterPath="$PROJECT_DIR$/OutputNoHeaders/bb_orders.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OutputNoHeaders/bb_publishers.csv" beforeDir="false" afterPath="$PROJECT_DIR$/OutputNoHeaders/bb_publishers.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OutputNoHeaders/bb_users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/OutputNoHeaders/bb_users.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OutputNoHeaders/bb_warehouse_stock.csv" beforeDir="false" afterPath="$PROJECT_DIR$/OutputNoHeaders/bb_warehouse_stock.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OutputNoHeaders/bb_warehouses.csv" beforeDir="false" afterPath="$PROJECT_DIR$/OutputNoHeaders/bb_warehouses.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OutputNoHeaders/bb_written_by.csv" beforeDir="false" afterPath="$PROJECT_DIR$/OutputNoHeaders/bb_written_by.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/Bits_Books.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/db/Bits_Books.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Diagrams/B&amp;B ER Diagram v6.pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

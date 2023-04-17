@@ -1,0 +1,153 @@
+digraph Relational {
+    
+    graph [pad="0.5", nodesep="0.5", ranksep="2"];
+    node [shape=plain]
+    rankdir=LR;
+    
+    
+    /// Creating entities
+    WAREHOUSE_STOCK  [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="gray90"><b>WAREHOUSE_STOCK</b></td></tr>
+            <tr><td port="1"><u>isbn</u></td></tr>
+            <tr><td port="2"><u>warehouse_id</u></td></tr>
+            <tr><td port="3">quantity</td></tr>
+        </table>>];
+
+    WAREHOUSE  [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="gray90"><b>WAREHOUSE</b></td></tr>
+            <tr><td port="1"><u>warehouse_id</u></td></tr>
+            <tr><td port="2">address_id</td></tr>
+            <tr><td port="3">total_capacity</td></tr>
+
+        </table>>];
+
+    EMPLOYEE  [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="gray90"><b>EMPLOYEE</b></td></tr>
+            <tr><td port="1"><u>employee_id</u></td></tr>
+            <tr><td port="2">warehouse_id</td></tr>
+            <tr><td port="3">position</td></tr>
+        </table>>];
+
+    ADDRESS  [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="gray90"><b>ADDRESS</b></td></tr>
+            <tr><td port="1"><u>address_id</u></td></tr>
+            <tr><td port="2">address</td></tr>
+            <tr><td port="3">secondary_address</td></tr>
+            <tr><td port="4">city</td></tr>
+            <tr><td port="5">state</td></tr>
+            <tr><td port="6">zip</td></tr>
+            <tr><td port="7">country</td></tr>
+        </table>>];
+
+    USER  [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="gray90"><b>USER</b></td></tr>
+            <tr><td port="1"><u>user_id</u></td></tr>
+            <tr><td port="2">email</td></tr>
+            <tr><td port="3">phone_no</td></tr>
+            <tr><td port="4">address_id</td></tr>
+            <tr><td port="5">name_id</td></tr>
+        </table>>];
+
+    ORDER  [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="gray90"><b>ORDER</b></td></tr>
+            <tr><td port="1"><u>order_id</u></td></tr>
+            <tr><td port="2">sale_date</td></tr>
+            <tr><td port="3">bill_no</td></tr>
+            <tr><td port="4">customer_id</td></tr>
+        </table>>];
+
+    BOOK_ORDER  [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="gray90"><b>BOOK_ORDER</b></td></tr>
+            <tr><td port="1"><u>warehouse_id</u></td></tr>
+            <tr><td port="2"><u>isbn</u></td></tr>
+            <tr><td port="3"><u>order_id</u></td></tr>
+            <tr><td port="4">quantity</td></tr>
+        </table>>];
+
+    BOOK  [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="gray90"><b>BOOK</b></td></tr>
+            <tr><td port="1"><u>isbn</u></td></tr>
+            <tr><td port="2">release_year</td></tr>
+            <tr><td port="3">sales_price</td></tr>
+            <tr><td port="4">title</td></tr>
+            <tr><td port="5">publisher_id</td></tr>
+        </table>>];
+
+    PUBLISHER  [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="gray90"><b>PUBLISHER</b></td></tr>
+            <tr><td port="1"><u>publisher_id</u></td></tr>
+            <tr><td port="2">name</td></tr>
+            <tr><td port="3">phone_no</td></tr>
+            <tr><td port="4">email</td></tr>
+        </table>>];
+    
+    WRITTEN_BY  [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="gray90"><b>WRITTEN_BY</b></td></tr>
+            <tr><td port="1"><u>author_id</u></td></tr>
+            <tr><td port="2"><u>isbn</u></td></tr>
+        </table>>];
+
+    BOOK_CATEGORY  [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="gray90"><b>BOOK_CATEGORY</b></td></tr>
+            <tr><td port="1"><u>isbn</u></td></tr>
+            <tr><td port="2"><u>category_id</u></td></tr>
+        </table>>];
+
+    CATEGORY  [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="gray90"><b>CATEGORY</b></td></tr>
+            <tr><td port="1"><u>category_id</u></td></tr>
+            <tr><td port="2">name</td></tr>
+            <tr><td port="3">description</td></tr>
+        </table>>];
+
+    AUTHOR  [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="gray90"><b>AUTHOR</b></td></tr>
+            <tr><td port="1"><u>author_id</u></td></tr>
+            <tr><td port="2">name_id</td></tr>
+            <tr><td port="3">birth_date</td></tr>
+            <tr><td port="4">death_date</td></tr>
+        </table>>];
+
+    NAME  [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="gray90"><b>NAME</b></td></tr>
+            <tr><td port="1"><u>name_id</u></td></tr>
+            <tr><td port="2">fname</td></tr>
+            <tr><td port="3">middle_inits</td></tr>
+            <tr><td port="4">lname</td></tr>
+        </table>>];
+
+    /// Creating connections
+    WAREHOUSE_STOCK:1 -> BOOK:1;
+    WAREHOUSE_STOCK:2 -> WAREHOUSE:1;
+    WAREHOUSE:2 -> ADDRESS:1;
+    EMPLOYEE:1 -> USER:1;
+    EMPLOYEE:2 -> WAREHOUSE:1;
+    USER:4 -> ADDRESS:1;
+    USER:5 -> NAME:1;
+    ORDER:4 -> USER:1;
+    BOOK_ORDER:1 -> WAREHOUSE:1;
+    BOOK_ORDER:2 -> BOOK:1;
+    BOOK_ORDER:3 -> ORDER:1;
+    BOOK:5 -> PUBLISHER:1;
+    WRITTEN_BY:1 -> BOOK:1;
+    WRITTEN_BY:2 -> AUTHOR:1;
+    BOOK_CATEGORY:1 -> BOOK:1;
+    BOOK_CATEGORY:2 -> CATEGORY:1;
+    AUTHOR:2 -> NAME:1;
+
+
+}

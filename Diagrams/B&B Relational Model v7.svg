@@ -1,0 +1,313 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="972pt" height="826pt" viewBox="0.00 0.00 972 825.67">
+<g id="graph0" class="graph" transform="translate(36,789.6699829101562) scale(1)" data-name="Relational">
+
+<polygon fill="white" stroke="none" points="-36,36 -36,-789.67 936,-789.67 936,36 -36,36"/>
+<!-- WAREHOUSE_STOCK -->
+<g id="node1" class="node" pointer-events="visible" data-name="WAREHOUSE_STOCK">
+
+<polygon fill="#e5e5e5" stroke="none" points="249,-570 249,-592 403,-592 403,-570 249,-570"/>
+<polygon fill="none" stroke="black" points="249,-570 249,-592 403,-592 403,-570 249,-570"/>
+<text text-anchor="start" x="251.71" y="-577.4" font-family="Times,serif" font-weight="bold" font-size="14.00">WAREHOUSE_STOCK</text>
+<polygon fill="none" stroke="black" points="249,-548 249,-570 403,-570 403,-548 249,-548"/>
+<text text-anchor="start" x="314.33" y="-555.4" font-family="Times,serif" text-decoration="underline" font-size="14.00">isbn</text>
+<polygon fill="none" stroke="black" points="249,-526 249,-548 403,-548 403,-526 249,-526"/>
+<text text-anchor="start" x="287.12" y="-533.4" font-family="Times,serif" text-decoration="underline" font-size="14.00">warehouse_id</text>
+<polygon fill="none" stroke="black" points="249,-504 249,-526 403,-526 403,-504 249,-504"/>
+<text text-anchor="start" x="303.06" y="-510.4" font-family="Times,serif" font-size="14.00">quantity</text>
+</g>
+<!-- WAREHOUSE -->
+<g id="node2" class="node" pointer-events="visible" data-name="WAREHOUSE">
+
+<polygon fill="#e5e5e5" stroke="none" points="547,-672 547,-694 645,-694 645,-672 547,-672"/>
+<polygon fill="none" stroke="black" points="547,-672 547,-694 645,-694 645,-672 547,-672"/>
+<text text-anchor="start" x="549.71" y="-679.4" font-family="Times,serif" font-weight="bold" font-size="14.00">WAREHOUSE</text>
+<polygon fill="none" stroke="black" points="547,-650 547,-672 645,-672 645,-650 547,-650"/>
+<text text-anchor="start" x="557.12" y="-657.4" font-family="Times,serif" text-decoration="underline" font-size="14.00">warehouse_id</text>
+<polygon fill="none" stroke="black" points="547,-628 547,-650 645,-650 645,-628 547,-628"/>
+<text text-anchor="start" x="566.06" y="-634.4" font-family="Times,serif" font-size="14.00">address_id</text>
+<polygon fill="none" stroke="black" points="547,-606 547,-628 645,-628 645,-606 547,-606"/>
+<text text-anchor="start" x="556.74" y="-612.4" font-family="Times,serif" font-size="14.00">total_capacity</text>
+</g>
+<!-- WAREHOUSE_STOCK&#45;&gt;WAREHOUSE -->
+<g id="edge2" class="edge" data-name="WAREHOUSE_STOCK:2-&gt;WAREHOUSE:1" data-comment="WAREHOUSE_STOCK-&gt;WAREHOUSE">
+
+<path fill="none" stroke="black" d="M403,-537C483.5,-537 464.64,-649.65 535.82,-660.21"/>
+<polygon fill="black" stroke="black" points="535.27,-663.68 545.49,-660.89 535.76,-656.7 535.27,-663.68"/>
+</g>
+<!-- BOOK -->
+<g id="node8" class="node" pointer-events="visible" data-name="BOOK">
+
+<polygon fill="#e5e5e5" stroke="none" points="559,-234 559,-256 634,-256 634,-234 559,-234"/>
+<polygon fill="none" stroke="black" points="559,-234 559,-256 634,-256 634,-234 559,-234"/>
+<text text-anchor="start" x="575.5" y="-241.4" font-family="Times,serif" font-weight="bold" font-size="14.00">BOOK</text>
+<polygon fill="none" stroke="black" points="559,-212 559,-234 634,-234 634,-212 559,-212"/>
+<text text-anchor="start" x="584.83" y="-219.4" font-family="Times,serif" text-decoration="underline" font-size="14.00">isbn</text>
+<polygon fill="none" stroke="black" points="559,-190 559,-212 634,-212 634,-190 559,-190"/>
+<text text-anchor="start" x="561.53" y="-196.4" font-family="Times,serif" font-size="14.00">release_year</text>
+<polygon fill="none" stroke="black" points="559,-168 559,-190 634,-190 634,-168 559,-168"/>
+<text text-anchor="start" x="565.4" y="-174.4" font-family="Times,serif" font-size="14.00">sales_price</text>
+<polygon fill="none" stroke="black" points="559,-146 559,-168 634,-168 634,-146 559,-146"/>
+<text text-anchor="start" x="585.61" y="-152.4" font-family="Times,serif" font-size="14.00">title</text>
+<polygon fill="none" stroke="black" points="559,-124 559,-146 634,-146 634,-124 559,-124"/>
+<text text-anchor="start" x="561.5" y="-130.4" font-family="Times,serif" font-size="14.00">publisher_id</text>
+</g>
+<!-- WAREHOUSE_STOCK&#45;&gt;BOOK -->
+<g id="edge1" class="edge" data-name="WAREHOUSE_STOCK:1-&gt;BOOK:1" data-comment="WAREHOUSE_STOCK-&gt;BOOK">
+
+<path fill="none" stroke="black" d="M403,-559C563.44,-559 401.83,-239.21 546.55,-223.59"/>
+<polygon fill="black" stroke="black" points="546.68,-227.09 556.49,-223.08 546.32,-220.1 546.68,-227.09"/>
+</g>
+<!-- ADDRESS -->
+<g id="node4" class="node" pointer-events="visible" data-name="ADDRESS">
+
+<polygon fill="#e5e5e5" stroke="none" points="789.5,-630 789.5,-652 900.5,-652 900.5,-630 789.5,-630"/>
+<polygon fill="none" stroke="black" points="789.5,-630 789.5,-652 900.5,-652 900.5,-630 789.5,-630"/>
+<text text-anchor="start" x="812.32" y="-637.4" font-family="Times,serif" font-weight="bold" font-size="14.00">ADDRESS</text>
+<polygon fill="none" stroke="black" points="789.5,-608 789.5,-630 900.5,-630 900.5,-608 789.5,-608"/>
+<text text-anchor="start" x="815.06" y="-615.4" font-family="Times,serif" text-decoration="underline" font-size="14.00">address_id</text>
+<polygon fill="none" stroke="black" points="789.5,-586 789.5,-608 900.5,-608 900.5,-586 789.5,-586"/>
+<text text-anchor="start" x="824.01" y="-592.4" font-family="Times,serif" font-size="14.00">address</text>
+<polygon fill="none" stroke="black" points="789.5,-564 789.5,-586 900.5,-586 900.5,-564 789.5,-564"/>
+<text text-anchor="start" x="792.13" y="-570.4" font-family="Times,serif" font-size="14.00">secondary_address</text>
+<polygon fill="none" stroke="black" points="789.5,-542 789.5,-564 900.5,-564 900.5,-542 789.5,-542"/>
+<text text-anchor="start" x="834.5" y="-548.4" font-family="Times,serif" font-size="14.00">city</text>
+<polygon fill="none" stroke="black" points="789.5,-520 789.5,-542 900.5,-542 900.5,-520 789.5,-520"/>
+<text text-anchor="start" x="832.17" y="-526.4" font-family="Times,serif" font-size="14.00">state</text>
+<polygon fill="none" stroke="black" points="789.5,-498 789.5,-520 900.5,-520 900.5,-498 789.5,-498"/>
+<text text-anchor="start" x="836.45" y="-504.4" font-family="Times,serif" font-size="14.00">zip</text>
+<polygon fill="none" stroke="black" points="789.5,-476 789.5,-498 900.5,-498 900.5,-476 789.5,-476"/>
+<text text-anchor="start" x="823.62" y="-482.4" font-family="Times,serif" font-size="14.00">country</text>
+</g>
+<!-- WAREHOUSE&#45;&gt;ADDRESS -->
+<g id="edge3" class="edge" data-name="WAREHOUSE:2-&gt;ADDRESS:1" data-comment="WAREHOUSE-&gt;ADDRESS">
+
+<path fill="none" stroke="black" d="M645,-639C705.7,-639 722.41,-621.35 777.79,-619.21"/>
+<polygon fill="black" stroke="black" points="777.55,-622.72 787.49,-619.03 777.42,-615.72 777.55,-622.72"/>
+</g>
+<!-- EMPLOYEE -->
+<g id="node3" class="node" pointer-events="visible" data-name="EMPLOYEE">
+
+<polygon fill="#e5e5e5" stroke="none" points="283,-694 283,-716 369,-716 369,-694 283,-694"/>
+<polygon fill="none" stroke="black" points="283,-694 283,-716 369,-716 369,-694 283,-694"/>
+<text text-anchor="start" x="285.94" y="-701.4" font-family="Times,serif" font-weight="bold" font-size="14.00">EMPLOYEE</text>
+<polygon fill="none" stroke="black" points="283,-672 283,-694 369,-694 369,-672 283,-672"/>
+<text text-anchor="start" x="289.84" y="-679.4" font-family="Times,serif" text-decoration="underline" font-size="14.00">employee_id</text>
+<polygon fill="none" stroke="black" points="283,-650 283,-672 369,-672 369,-650 283,-650"/>
+<text text-anchor="start" x="287.12" y="-656.4" font-family="Times,serif" font-size="14.00">warehouse_id</text>
+<polygon fill="none" stroke="black" points="283,-628 283,-650 369,-650 369,-628 283,-628"/>
+<text text-anchor="start" x="303.44" y="-634.4" font-family="Times,serif" font-size="14.00">position</text>
+</g>
+<!-- EMPLOYEE&#45;&gt;WAREHOUSE -->
+<g id="edge5" class="edge" data-name="EMPLOYEE:2-&gt;WAREHOUSE:1" data-comment="EMPLOYEE-&gt;WAREHOUSE">
+
+<path fill="none" stroke="black" d="M370,-661C444.83,-661 466.27,-661 535.88,-661"/>
+<polygon fill="black" stroke="black" points="535.49,-664.5 545.49,-661 535.49,-657.5 535.49,-664.5"/>
+</g>
+<!-- USER -->
+<g id="node5" class="node" pointer-events="visible" data-name="USER">
+
+<polygon fill="#e5e5e5" stroke="none" points="564,-548 564,-570 629,-570 629,-548 564,-548"/>
+<polygon fill="none" stroke="black" points="564,-548 564,-570 629,-570 629,-548 564,-548"/>
+<text text-anchor="start" x="577.83" y="-555.4" font-family="Times,serif" font-weight="bold" font-size="14.00">USER</text>
+<polygon fill="none" stroke="black" points="564,-526 564,-548 629,-548 629,-526 564,-526"/>
+<text text-anchor="start" x="575.89" y="-533.4" font-family="Times,serif" text-decoration="underline" font-size="14.00">user_id</text>
+<polygon fill="none" stroke="black" points="564,-504 564,-526 629,-526 629,-504 564,-504"/>
+<text text-anchor="start" x="580.95" y="-510.4" font-family="Times,serif" font-size="14.00">email</text>
+<polygon fill="none" stroke="black" points="564,-482 564,-504 629,-504 629,-482 564,-482"/>
+<text text-anchor="start" x="568.89" y="-488.4" font-family="Times,serif" font-size="14.00">phone_no</text>
+<polygon fill="none" stroke="black" points="564,-460 564,-482 629,-482 629,-460 564,-460"/>
+<text text-anchor="start" x="566.56" y="-466.4" font-family="Times,serif" font-size="14.00">address_id</text>
+<polygon fill="none" stroke="black" points="564,-438 564,-460 629,-460 629,-438 564,-438"/>
+<text text-anchor="start" x="572.4" y="-444.4" font-family="Times,serif" font-size="14.00">name_id</text>
+</g>
+<!-- EMPLOYEE&#45;&gt;USER -->
+<g id="edge4" class="edge" data-name="EMPLOYEE:1-&gt;USER:1" data-comment="EMPLOYEE-&gt;USER">
+
+<path fill="none" stroke="black" d="M370,-683C473.57,-683 456.91,-547.63 551.55,-537.59"/>
+<polygon fill="black" stroke="black" points="551.68,-541.09 561.49,-537.08 551.32,-534.1 551.68,-541.09"/>
+</g>
+<!-- USER&#45;&gt;ADDRESS -->
+<g id="edge6" class="edge" data-name="USER:4-&gt;ADDRESS:1" data-comment="USER-&gt;ADDRESS">
+
+<path fill="none" stroke="black" d="M630,-471C722.58,-471 695.03,-607.11 777.76,-618.27"/>
+<polygon fill="black" stroke="black" points="777.28,-621.75 787.49,-618.9 777.74,-614.76 777.28,-621.75"/>
+</g>
+<!-- NAME -->
+<g id="node14" class="node" pointer-events="visible" data-name="NAME">
+
+<polygon fill="#e5e5e5" stroke="none" points="806.5,-398 806.5,-420 882.5,-420 882.5,-398 806.5,-398"/>
+<polygon fill="none" stroke="black" points="806.5,-398 806.5,-420 882.5,-420 882.5,-398 806.5,-398"/>
+<text text-anchor="start" x="823.11" y="-405.4" font-family="Times,serif" font-weight="bold" font-size="14.00">NAME</text>
+<polygon fill="none" stroke="black" points="806.5,-376 806.5,-398 882.5,-398 882.5,-376 806.5,-376"/>
+<text text-anchor="start" x="820.4" y="-383.4" font-family="Times,serif" text-decoration="underline" font-size="14.00">name_id</text>
+<polygon fill="none" stroke="black" points="806.5,-354 806.5,-376 882.5,-376 882.5,-354 806.5,-354"/>
+<text text-anchor="start" x="827.01" y="-360.4" font-family="Times,serif" font-size="14.00">fname</text>
+<polygon fill="none" stroke="black" points="806.5,-332 806.5,-354 882.5,-354 882.5,-332 806.5,-332"/>
+<text text-anchor="start" x="809.5" y="-338.4" font-family="Times,serif" font-size="14.00">middle_inits</text>
+<polygon fill="none" stroke="black" points="806.5,-310 806.5,-332 882.5,-332 882.5,-310 806.5,-310"/>
+<text text-anchor="start" x="827.4" y="-316.4" font-family="Times,serif" font-size="14.00">lname</text>
+</g>
+<!-- USER&#45;&gt;NAME -->
+<g id="edge7" class="edge" data-name="USER:5-&gt;NAME:1" data-comment="USER-&gt;NAME">
+
+<path fill="none" stroke="black" d="M630,-449C708.85,-449 721.67,-392.68 794.33,-387.4"/>
+<polygon fill="black" stroke="black" points="794.12,-390.91 803.99,-387.05 793.87,-383.91 794.12,-390.91"/>
+</g>
+<!-- ORDER -->
+<g id="node6" class="node" pointer-events="visible" data-name="ORDER">
+
+<polygon fill="#e5e5e5" stroke="none" points="289,-446 289,-468 364,-468 364,-446 289,-446"/>
+<polygon fill="none" stroke="black" points="289,-446 289,-468 364,-468 364,-446 289,-446"/>
+<text text-anchor="start" x="301.22" y="-453.4" font-family="Times,serif" font-weight="bold" font-size="14.00">ORDER</text>
+<polygon fill="none" stroke="black" points="289,-424 289,-446 364,-446 364,-424 289,-424"/>
+<text text-anchor="start" x="302.79" y="-431.4" font-family="Times,serif" text-decoration="underline" font-size="14.00">order_id</text>
+<polygon fill="none" stroke="black" points="289,-402 289,-424 364,-424 364,-402 289,-402"/>
+<text text-anchor="start" x="300.46" y="-408.4" font-family="Times,serif" font-size="14.00">sale_date</text>
+<polygon fill="none" stroke="black" points="289,-380 289,-402 364,-402 364,-380 289,-380"/>
+<text text-anchor="start" x="306.67" y="-386.4" font-family="Times,serif" font-size="14.00">bill_no</text>
+<polygon fill="none" stroke="black" points="289,-358 289,-380 364,-380 364,-358 289,-358"/>
+<text text-anchor="start" x="291.9" y="-364.4" font-family="Times,serif" font-size="14.00">customer_id</text>
+</g>
+<!-- ORDER&#45;&gt;USER -->
+<g id="edge8" class="edge" data-name="ORDER:4-&gt;USER:1" data-comment="ORDER-&gt;USER">
+
+<path fill="none" stroke="black" d="M365,-369C476.46,-369 449.66,-525.71 551.67,-536.42"/>
+<polygon fill="black" stroke="black" points="551.32,-539.91 561.49,-536.92 551.68,-532.92 551.32,-539.91"/>
+</g>
+<!-- BOOK_ORDER -->
+<g id="node7" class="node" pointer-events="visible" data-name="BOOK_ORDER">
+
+<polygon fill="#e5e5e5" stroke="none" points="0.5,-490 0.5,-512 105.5,-512 105.5,-490 0.5,-490"/>
+<polygon fill="none" stroke="black" points="0.5,-490 0.5,-512 105.5,-512 105.5,-490 0.5,-490"/>
+<text text-anchor="start" x="3.22" y="-497.4" font-family="Times,serif" font-weight="bold" font-size="14.00">BOOK_ORDER</text>
+<polygon fill="none" stroke="black" points="0.5,-468 0.5,-490 105.5,-490 105.5,-468 0.5,-468"/>
+<text text-anchor="start" x="14.12" y="-475.4" font-family="Times,serif" text-decoration="underline" font-size="14.00">warehouse_id</text>
+<polygon fill="none" stroke="black" points="0.5,-446 0.5,-468 105.5,-468 105.5,-446 0.5,-446"/>
+<text text-anchor="start" x="41.33" y="-453.4" font-family="Times,serif" text-decoration="underline" font-size="14.00">isbn</text>
+<polygon fill="none" stroke="black" points="0.5,-424 0.5,-446 105.5,-446 105.5,-424 0.5,-424"/>
+<text text-anchor="start" x="29.29" y="-431.4" font-family="Times,serif" text-decoration="underline" font-size="14.00">order_id</text>
+<polygon fill="none" stroke="black" points="0.5,-402 0.5,-424 105.5,-424 105.5,-402 0.5,-402"/>
+<text text-anchor="start" x="30.06" y="-408.4" font-family="Times,serif" font-size="14.00">quantity</text>
+</g>
+<!-- BOOK_ORDER&#45;&gt;WAREHOUSE -->
+<g id="edge9" class="edge" data-name="BOOK_ORDER:1-&gt;WAREHOUSE:1" data-comment="BOOK_ORDER-&gt;WAREHOUSE">
+
+<path fill="none" stroke="black" d="M105,-479C235.16,-479 136.59,-668.39 249,-734 308.11,-768.5 336.43,-749.91 403,-734 468.97,-718.23 474.78,-667.04 535.83,-661.49"/>
+<polygon fill="black" stroke="black" points="535.65,-665 545.49,-661.07 535.34,-658.01 535.65,-665"/>
+</g>
+<!-- BOOK_ORDER&#45;&gt;ORDER -->
+<g id="edge11" class="edge" data-name="BOOK_ORDER:3-&gt;ORDER:1" data-comment="BOOK_ORDER-&gt;ORDER">
+
+<path fill="none" stroke="black" d="M105,-435C182.36,-435 204.54,-435 276.51,-435"/>
+<polygon fill="black" stroke="black" points="276.49,-438.5 286.49,-435 276.49,-431.5 276.49,-438.5"/>
+</g>
+<!-- BOOK_ORDER&#45;&gt;BOOK -->
+<g id="edge10" class="edge" data-name="BOOK_ORDER:2-&gt;BOOK:1" data-comment="BOOK_ORDER-&gt;BOOK">
+
+<path fill="none" stroke="black" d="M105,-457C221.49,-457 147.84,-295.76 249,-238 365.02,-171.75 417.5,-220.09 546.52,-222.88"/>
+<polygon fill="black" stroke="black" points="546.45,-226.38 556.49,-222.98 546.52,-219.38 546.45,-226.38"/>
+</g>
+<!-- PUBLISHER -->
+<g id="node9" class="node" pointer-events="visible" data-name="PUBLISHER">
+
+<polygon fill="#e5e5e5" stroke="none" points="801.5,-146 801.5,-168 887.5,-168 887.5,-146 801.5,-146"/>
+<polygon fill="none" stroke="black" points="801.5,-146 801.5,-168 887.5,-168 887.5,-146 801.5,-146"/>
+<text text-anchor="start" x="804.04" y="-153.4" font-family="Times,serif" font-weight="bold" font-size="14.00">PUBLISHER</text>
+<polygon fill="none" stroke="black" points="801.5,-124 801.5,-146 887.5,-146 887.5,-124 801.5,-124"/>
+<text text-anchor="start" x="809.5" y="-131.4" font-family="Times,serif" text-decoration="underline" font-size="14.00">publisher_id</text>
+<polygon fill="none" stroke="black" points="801.5,-102 801.5,-124 887.5,-124 887.5,-102 801.5,-102"/>
+<text text-anchor="start" x="829.34" y="-108.4" font-family="Times,serif" font-size="14.00">name</text>
+<polygon fill="none" stroke="black" points="801.5,-80 801.5,-102 887.5,-102 887.5,-80 801.5,-80"/>
+<text text-anchor="start" x="816.89" y="-86.4" font-family="Times,serif" font-size="14.00">phone_no</text>
+<polygon fill="none" stroke="black" points="801.5,-58 801.5,-80 887.5,-80 887.5,-58 801.5,-58"/>
+<text text-anchor="start" x="828.95" y="-64.4" font-family="Times,serif" font-size="14.00">email</text>
+</g>
+<!-- BOOK&#45;&gt;PUBLISHER -->
+<g id="edge12" class="edge" data-name="BOOK:5-&gt;PUBLISHER:1" data-comment="BOOK-&gt;PUBLISHER">
+
+<path fill="none" stroke="black" d="M635,-135C704.68,-135 724.85,-135 789.31,-135"/>
+<polygon fill="black" stroke="black" points="788.99,-138.5 798.99,-135 788.99,-131.5 788.99,-138.5"/>
+</g>
+<!-- WRITTEN_BY -->
+<g id="node10" class="node" pointer-events="visible" data-name="WRITTEN_BY">
+
+<polygon fill="#e5e5e5" stroke="none" points="276,-300 276,-322 376,-322 376,-300 276,-300"/>
+<polygon fill="none" stroke="black" points="276,-300 276,-322 376,-322 376,-300 276,-300"/>
+<text text-anchor="start" x="278.93" y="-307.4" font-family="Times,serif" font-weight="bold" font-size="14.00">WRITTEN_BY</text>
+<polygon fill="none" stroke="black" points="276,-278 276,-300 376,-300 376,-278 276,-278"/>
+<text text-anchor="start" x="299.17" y="-285.4" font-family="Times,serif" text-decoration="underline" font-size="14.00">author_id</text>
+<polygon fill="none" stroke="black" points="276,-256 276,-278 376,-278 376,-256 276,-256"/>
+<text text-anchor="start" x="314.33" y="-263.4" font-family="Times,serif" text-decoration="underline" font-size="14.00">isbn</text>
+</g>
+<!-- WRITTEN_BY&#45;&gt;BOOK -->
+<g id="edge13" class="edge" data-name="WRITTEN_BY:1-&gt;BOOK:1" data-comment="WRITTEN_BY-&gt;BOOK">
+
+<path fill="none" stroke="black" d="M377,-289C458.78,-289 471.35,-228.8 546.91,-223.39"/>
+<polygon fill="black" stroke="black" points="546.62,-226.9 556.49,-223.05 546.37,-219.9 546.62,-226.9"/>
+</g>
+<!-- AUTHOR -->
+<g id="node13" class="node" pointer-events="visible" data-name="AUTHOR">
+
+<polygon fill="#e5e5e5" stroke="none" points="563,-380 563,-402 630,-402 630,-380 563,-380"/>
+<polygon fill="none" stroke="black" points="563,-380 563,-402 630,-402 630,-380 563,-380"/>
+<text text-anchor="start" x="565.78" y="-387.4" font-family="Times,serif" font-weight="bold" font-size="14.00">AUTHOR</text>
+<polygon fill="none" stroke="black" points="563,-358 563,-380 630,-380 630,-358 563,-358"/>
+<text text-anchor="start" x="569.67" y="-365.4" font-family="Times,serif" text-decoration="underline" font-size="14.00">author_id</text>
+<polygon fill="none" stroke="black" points="563,-336 563,-358 630,-358 630,-336 563,-336"/>
+<text text-anchor="start" x="572.4" y="-342.4" font-family="Times,serif" font-size="14.00">name_id</text>
+<polygon fill="none" stroke="black" points="563,-314 563,-336 630,-336 630,-314 563,-314"/>
+<text text-anchor="start" x="568.12" y="-320.4" font-family="Times,serif" font-size="14.00">birth_date</text>
+<polygon fill="none" stroke="black" points="563,-292 563,-314 630,-314 630,-292 563,-292"/>
+<text text-anchor="start" x="566.18" y="-298.4" font-family="Times,serif" font-size="14.00">death_date</text>
+</g>
+<!-- WRITTEN_BY&#45;&gt;AUTHOR -->
+<g id="edge14" class="edge" data-name="WRITTEN_BY:2-&gt;AUTHOR:1" data-comment="WRITTEN_BY-&gt;AUTHOR">
+
+<path fill="none" stroke="black" d="M377,-267C466.95,-267 468.17,-360.61 550.67,-368.48"/>
+<polygon fill="black" stroke="black" points="550.34,-371.96 560.49,-368.93 550.66,-364.97 550.34,-371.96"/>
+</g>
+<!-- BOOK_CATEGORY -->
+<g id="node11" class="node" pointer-events="visible" data-name="BOOK_CATEGORY">
+
+<polygon fill="#e5e5e5" stroke="none" points="259,-106 259,-128 394,-128 394,-106 259,-106"/>
+<polygon fill="none" stroke="black" points="259,-106 259,-128 394,-128 394,-106 259,-106"/>
+<text text-anchor="start" x="261.55" y="-113.4" font-family="Times,serif" font-weight="bold" font-size="14.00">BOOK_CATEGORY</text>
+<polygon fill="none" stroke="black" points="259,-84 259,-106 394,-106 394,-84 259,-84"/>
+<text text-anchor="start" x="314.83" y="-91.4" font-family="Times,serif" text-decoration="underline" font-size="14.00">isbn</text>
+<polygon fill="none" stroke="black" points="259,-62 259,-84 394,-84 394,-62 259,-62"/>
+<text text-anchor="start" x="293.46" y="-69.4" font-family="Times,serif" text-decoration="underline" font-size="14.00">category_id</text>
+</g>
+<!-- BOOK_CATEGORY&#45;&gt;BOOK -->
+<g id="edge15" class="edge" data-name="BOOK_CATEGORY:1-&gt;BOOK:1" data-comment="BOOK_CATEGORY-&gt;BOOK">
+
+<path fill="none" stroke="black" d="M395,-95C483.15,-95 467.5,-212.24 546.74,-222.31"/>
+<polygon fill="black" stroke="black" points="546.29,-225.79 556.49,-222.91 546.72,-218.8 546.29,-225.79"/>
+</g>
+<!-- CATEGORY -->
+<g id="node12" class="node" pointer-events="visible" data-name="CATEGORY">
+
+<polygon fill="#e5e5e5" stroke="none" points="553,-66 553,-88 639,-88 639,-66 553,-66"/>
+<polygon fill="none" stroke="black" points="553,-66 553,-88 639,-88 639,-66 553,-66"/>
+<text text-anchor="start" x="555.55" y="-73.4" font-family="Times,serif" font-weight="bold" font-size="14.00">CATEGORY</text>
+<polygon fill="none" stroke="black" points="553,-44 553,-66 639,-66 639,-44 553,-44"/>
+<text text-anchor="start" x="562.96" y="-51.4" font-family="Times,serif" text-decoration="underline" font-size="14.00">category_id</text>
+<polygon fill="none" stroke="black" points="553,-22 553,-44 639,-44 639,-22 553,-22"/>
+<text text-anchor="start" x="580.84" y="-28.4" font-family="Times,serif" font-size="14.00">name</text>
+<polygon fill="none" stroke="black" points="553,0 553,-22 639,-22 639,0 553,0"/>
+<text text-anchor="start" x="564.9" y="-6.4" font-family="Times,serif" font-size="14.00">description</text>
+</g>
+<!-- BOOK_CATEGORY&#45;&gt;CATEGORY -->
+<g id="edge16" class="edge" data-name="BOOK_CATEGORY:2-&gt;CATEGORY:1" data-comment="BOOK_CATEGORY-&gt;CATEGORY">
+
+<path fill="none" stroke="black" d="M395,-73C461.26,-73 479.72,-56.98 540.56,-55.17"/>
+<polygon fill="black" stroke="black" points="540.54,-58.67 550.49,-55.02 540.44,-51.67 540.54,-58.67"/>
+</g>
+<!-- AUTHOR&#45;&gt;NAME -->
+<g id="edge17" class="edge" data-name="AUTHOR:2-&gt;NAME:1" data-comment="AUTHOR-&gt;NAME">
+
+<path fill="none" stroke="black" d="M631,-347C706.68,-347 724.28,-383.19 794.29,-386.72"/>
+<polygon fill="black" stroke="black" points="793.9,-390.21 803.99,-386.96 794.08,-383.22 793.9,-390.21"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,140 @@
+digraph ER_Diagram {
+    node[shape=rectangle, fontname=Helvetica, fontsize=12, style=filled, fillcolor=white, mode=neato];
+    edge[arrowhead=none, fontname=Helvetica, fontsize=12, fontcolor=black];
+
+    // Strong entity nodes
+    node[shape=rectangle, style=filled, fillcolor=gray90, splines=true];
+    CATEGORY [label="CATEGORY"];
+    PUBLISHER [label="PUBLISHER"];
+    BOOK [label="BOOK"];
+    AUTHOR [label="AUTHOR"];
+    NAME [label="NAME"];
+    USER [label="USER"];
+    ADDRESS [label="ADDRESS"];
+    ORDER [label="ORDER"];
+    WAREHOUSE [label="WAREHOUSE"];
+    
+    // Weak entity nodes
+    node[shape=rectangle, peripheries=2]
+    BOOK_ORDER [label="BOOK_ORDER"];
+    WAREHOUSE_STOCK [label="WAREHOUSE_STOCK"];
+    EMPLOYEE [label="EMPLOYEE"];
+    
+    // Strong relationship nodes
+    node[shape=diamond, peripheries=1];
+    WRITTEN_BY;
+    PUBLISHED_BY;
+    PLACES;
+    STAFFS;
+    IS_IN;
+    h1 [label="HAS_AN"];
+    h2 [label="HAS_AN"];
+    ha1 [label="HAS_A"];
+    ha2 [label="HAS_A"];
+    
+    // Weak relationship nodes
+    node[shape=diamond, peripheries=2]
+    IS_AN;
+    BELONGS_TO;
+    ORDERS;
+    SUPPLIES;
+    FULFILLS;
+    STORES;
+    
+    /// Connecting relationships and entities
+    BOOK -> WRITTEN_BY [label="(1,n)"];
+    WRITTEN_BY -> AUTHOR [label="(1,n)"];
+    BOOK -> PUBLISHED_BY [label="(0,1)"];
+    PUBLISHED_BY -> PUBLISHER [label="(1,n)"];
+    USER -> PLACES [label="(0,n)"];
+    PLACES -> ORDER [label="(1,1)"];
+    EMPLOYEE -> STAFFS [label="(0,n)"];
+    STAFFS -> WAREHOUSE [label="(1,n)"];
+    USER -> h1 [label="(1,1)"];
+    BOOK -> IS_IN [label="(1,n)"];
+    IS_IN -> CATEGORY [label="(0,n)"];
+    h1 -> ADDRESS [label="(1,n)"];
+    WAREHOUSE -> h2 [label="(1,1)"];
+    h2 -> ADDRESS [label="(1,1)"];
+    AUTHOR -> ha1 [label="(1,1)"];
+    ha1 -> NAME [label="(1,n)"];
+    USER -> ha2 [label="(1,1)"];
+    ha2 -> NAME [label="(1,n)"];
+    USER -> IS_AN [label="(0,n)"];
+    IS_AN -> EMPLOYEE [label="(1,1)"];
+    BOOK_ORDER -> BELONGS_TO [label="(1,1)"];
+    BELONGS_TO -> ORDER [label="(1,1)"];
+    BOOK_ORDER -> ORDERS [label="(1,1)"];
+    ORDERS -> BOOK [label="(0,n)"];
+    WAREHOUSE_STOCK -> SUPPLIES [label="(1,1)"];
+    SUPPLIES -> BOOK [label="(0,n)"];
+    WAREHOUSE -> FULFILLS [label="(0,n)"];
+    FULFILLS -> BOOK_ORDER [label="(1,1)"];
+    WAREHOUSE -> STORES [label="(0,n)"];
+    STORES -> WAREHOUSE_STOCK [label="(1,1)"];
+    
+
+    // Attribute nodes
+    node[shape=oval, peripheries=1, fillcolor=white];
+    cat_id [label=<<u>category_id</u>>];
+    CATEGORY -> cat_id;
+    CATEGORY -> cat_name;
+    CATEGORY -> description;
+    
+    pub_id [label=<<u>publisher_id</u>>];
+    PUBLISHER -> pub_id;
+    PUBLISHER -> pub_name;
+    p1 [label="phone_no"]
+    PUBLISHER -> p1;
+    e1 [label="email"]
+    PUBLISHER -> e1;
+    
+    isbn [label=<<u>isbn</u>>];
+    BOOK -> isbn;
+    BOOK -> release_year;
+    BOOK -> sales_price;
+    BOOK -> title;
+    
+    author_id [label=<<u>author_id</u>>];
+    AUTHOR -> author_id;
+    AUTHOR -> birth_date;
+    AUTHOR -> death_date;
+    
+    name_id [label=<<u>name_id</u>>];
+    NAME -> name_id;
+    NAME -> fname;
+    NAME -> lname;
+    NAME -> middle_inits;
+    
+    user_id [label=<<u>user_id</u>>];
+    USER -> user_id;
+    USER -> email;
+    USER -> phone_no;
+    
+    address_id [label=<<u>address_id</u>>];
+    ADDRESS -> address_id;
+    ADDRESS -> address;
+    ADDRESS -> secondary_address;
+    ADDRESS -> city;
+    ADDRESS -> state;
+    ADDRESS -> zip;
+    ADDRESS -> country;
+    
+    order_id [label=<<u>order_id</u>>];
+    ORDER -> order_id;
+    ORDER -> sale_date;
+    ORDER -> bill_no;
+    
+    warehouse_id [label=<<u>warehouse_id</u>>];
+    WAREHOUSE -> warehouse_id;
+    WAREHOUSE -> total_capacity;
+    
+    q1 [label="quantity"];
+    WAREHOUSE_STOCK -> q1;
+    
+    q2 [label="quantity"];
+    BOOK_ORDER -> q2;
+    
+    EMPLOYEE -> position;
+
+}
