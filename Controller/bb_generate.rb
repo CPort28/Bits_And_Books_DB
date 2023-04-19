@@ -25,7 +25,7 @@ SQL
 db.execute <<-SQL
   CREATE TABLE BOOK (
     isbn CHAR(13) NOT NULL PRIMARY KEY,
-    release_year INTEGER(4) NOT NULL,
+    release_year CHAR(4) NOT NULL,
     sales_price DECIMAL(10,2) NOT NULL,
     title VARCHAR(255) NOT NULL,
     publisher_id INTEGER NOT NULL,
@@ -75,7 +75,7 @@ db.execute <<-SQL
     user_id INTEGER NOT NULL PRIMARY KEY,
     name_id INTEGER NOT NULL,
     email VARCHAR(255) NOT NULL,
-    phone_no INTEGER(10),
+    phone_no CHAR(10),
     address_id INTEGER NOT NULL,
     FOREIGN KEY(name_id) REFERENCES NAME(name_id)
     FOREIGN KEY(address_id) REFERENCES ADDRESS(address_id)
@@ -98,9 +98,9 @@ db.execute <<-SQL
     address VARCHAR(100) NOT NULL,
     secondary_address VARCHAR(50),
     city VARCHAR(30) NOT NULL,
-    state VARCHAR(2) NOT NULL,
+    state CHAR(2) NOT NULL,
     zip VARCHAR(10) NOT NULL,
-    country VARCHAR(3) NOT NULL
+    country CHAR(3) NOT NULL
   );
 SQL
 

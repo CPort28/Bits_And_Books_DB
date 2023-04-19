@@ -214,10 +214,7 @@ data_hash_array.each_with_index do |row, index|
   isbn = isbn_written_by
   author_id = get_author_id(auth_id_array, row["Author(s)"])
   hash_to_add = {"author_id" => author_id, "isbn" => isbn}
-  if written_by_array.include? hash_to_add
-    puts "Hash #{hash_to_add} already in array"
-  else
-    puts "Hash #{hash_to_add} being added to array"
+  if !written_by_array.include? hash_to_add
     written_by_array.push(hash_to_add) if !written_by_array.include? hash_to_add
   end
   
@@ -308,8 +305,6 @@ order_array = []
 customer_users_array.each_with_index do |customer, index|
   customer_id = customer["user_id"]
   for i in 0..rand(MIN_ORDER_PER_CUSTOMER..MAX_ORDER_PER_CUSTOMER)
-    order_id = order_counter
-    order_counter = order_counter + 1
     sale_date = Faker::Date.between(from: START_SALES_DATE, to: END_SALES_DATE)
     valid_bill_no = 0
     while valid_bill_no == 0 do
@@ -319,9 +314,16 @@ customer_users_array.each_with_index do |customer, index|
         valid_bill_no = 1
       end
     end
-    order_array.push({"order_id" => order_id, "sale_date" => sale_date, "bill_no" => bill_no, 
+    order_array.push({"order_id" => 0, "sale_date" => sale_date, "bill_no" => bill_no, 
       "customer_id" => customer_id})
   end
+end
+
+#Sorting by sale date then assigning order numbers
+order_array.sort_by! {|order| order["sale_date"]}
+order_array.each_with_index do |order, idx|
+  order_array[idx]["order_id"] = order_counter
+  order_counter = order_counter + 1
 end
 
 # FOR TESTING:

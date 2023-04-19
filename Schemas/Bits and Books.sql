@@ -8,13 +8,13 @@ CREATE TABLE CATEGORY (
 CREATE TABLE PUBLISHER (
     publisher_id INTEGER NOT NULL PRIMARY KEY,
     pub_name VARCHAR(50) NOT NULL,
-    phone_no INTEGER(10) NOT NULL,
+    phone_no CHAR(10) NOT NULL,
     email VARCHAR(30) NOT NULL
 );
 
 CREATE TABLE BOOK (
     isbn CHAR(13) NOT NULL PRIMARY KEY,
-    release_year INTEGER(4) NOT NULL,
+    release_year CHAR(4) NOT NULL,
     sales_price DECIMAL(10,2) NOT NULL,
     title VARCHAR(255) NOT NULL,
     publisher_id INTEGER NOT NULL,
@@ -54,7 +54,7 @@ CREATE TABLE USER (
     user_id INTEGER NOT NULL PRIMARY KEY,
     name_id INTEGER NOT NULL,
     email VARCHAR(255) NOT NULL,
-    phone_no INTEGER(10),
+    phone_no CHAR(10),
     address_id INTEGER NOT NULL,
     FOREIGN KEY(name_id) REFERENCES NAME(name_id)
     FOREIGN KEY(address_id) REFERENCES ADDRESS(address_id)
@@ -65,9 +65,9 @@ CREATE TABLE ADDRESS (
     address VARCHAR(100) NOT NULL,
     secondary_address VARCHAR(50),
     city VARCHAR(30) NOT NULL,
-    state VARCHAR(2) NOT NULL,
+    state CHAR(2) NOT NULL,
     zip VARCHAR(10) NOT NULL,
-    country VARCHAR(3) NOT NULL
+    country CHAR(3) NOT NULL
 );
 
 CREATE TABLE "ORDER" (

@@ -9,8 +9,8 @@ digraph Relational {
     WAREHOUSE_STOCK  [label=<
         <table border="0" cellborder="1" cellspacing="0">
         <tr><td bgcolor="gray90"><b>WAREHOUSE_STOCK</b></td></tr>
-            <tr><td port="1"><u>isbn</u></td></tr>
             <tr><td port="2"><u>warehouse_id</u></td></tr>
+            <tr><td port="1"><u>isbn</u></td></tr>
             <tr><td port="3">quantity</td></tr>
         </table>>];
 
@@ -26,8 +26,8 @@ digraph Relational {
     EMPLOYEE  [label=<
         <table border="0" cellborder="1" cellspacing="0">
         <tr><td bgcolor="gray90"><b>EMPLOYEE</b></td></tr>
-            <tr><td port="1"><u>employee_id</u></td></tr>
             <tr><td port="2">warehouse_id</td></tr>
+            <tr><td port="1"><u>employee_id</u></td></tr>
             <tr><td port="3">position</td></tr>
         </table>>];
 
@@ -85,7 +85,7 @@ digraph Relational {
         <table border="0" cellborder="1" cellspacing="0">
         <tr><td bgcolor="gray90"><b>PUBLISHER</b></td></tr>
             <tr><td port="1"><u>publisher_id</u></td></tr>
-            <tr><td port="2">name</td></tr>
+            <tr><td port="2">pub_name</td></tr>
             <tr><td port="3">phone_no</td></tr>
             <tr><td port="4">email</td></tr>
         </table>>];
@@ -93,8 +93,8 @@ digraph Relational {
     WRITTEN_BY  [label=<
         <table border="0" cellborder="1" cellspacing="0">
         <tr><td bgcolor="gray90"><b>WRITTEN_BY</b></td></tr>
-            <tr><td port="1"><u>author_id</u></td></tr>
-            <tr><td port="2"><u>isbn</u></td></tr>
+            <tr><td port="2"><u>author_id</u></td></tr>
+            <tr><td port="1"><u>isbn</u></td></tr>
         </table>>];
 
     BOOK_CATEGORY  [label=<
@@ -108,7 +108,7 @@ digraph Relational {
         <table border="0" cellborder="1" cellspacing="0">
         <tr><td bgcolor="gray90"><b>CATEGORY</b></td></tr>
             <tr><td port="1"><u>category_id</u></td></tr>
-            <tr><td port="2">name</td></tr>
+            <tr><td port="2">cat_name</td></tr>
             <tr><td port="3">description</td></tr>
         </table>>];
 
