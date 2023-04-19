@@ -1379,473 +1379,597 @@
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <key id="509" parent="482">
+    <index id="509" parent="482" name="address_id_idx">
+      <ColNames>address_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="510" parent="482" name="state_idx">
+      <ColNames>state</ColNames>
+    </index>
+    <key id="511" parent="482">
       <ColNames>address_id</ColNames>
       <Primary>1</Primary>
+      <UnderlyingIndexName>address_id_idx</UnderlyingIndexName>
     </key>
-    <column id="510" parent="483" name="author_id">
+    <column id="512" parent="483" name="author_id">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="511" parent="483" name="name_id">
+    <column id="513" parent="483" name="name_id">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="512" parent="483" name="birth_date">
+    <column id="514" parent="483" name="birth_date">
       <DasType>DATE|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="513" parent="483" name="death_date">
+    <column id="515" parent="483" name="death_date">
       <DasType>DATE|0s</DasType>
       <Position>4</Position>
     </column>
-    <foreign-key id="514" parent="483">
+    <foreign-key id="516" parent="483">
       <ColNames>name_id</ColNames>
       <RefColNames>name_id</RefColNames>
       <RefTableName>NAME</RefTableName>
     </foreign-key>
-    <key id="515" parent="483">
+    <index id="517" parent="483" name="author_id_idx">
+      <ColNames>author_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="518" parent="483" name="bdate_idx">
+      <ColNames>birth_date</ColNames>
+    </index>
+    <key id="519" parent="483">
       <ColNames>author_id</ColNames>
       <Primary>1</Primary>
+      <UnderlyingIndexName>author_id_idx</UnderlyingIndexName>
     </key>
-    <column id="516" parent="484" name="isbn">
+    <column id="520" parent="484" name="isbn">
       <DasType>CHAR(13)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="517" parent="484" name="release_year">
+    <column id="521" parent="484" name="release_year">
       <DasType>INTEGER(4)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="518" parent="484" name="sales_price">
+    <column id="522" parent="484" name="sales_price">
       <DasType>DECIMAL(10,2)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="519" parent="484" name="title">
+    <column id="523" parent="484" name="title">
       <DasType>VARCHAR(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="520" parent="484" name="publisher_id">
+    <column id="524" parent="484" name="publisher_id">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <foreign-key id="521" parent="484">
+    <foreign-key id="525" parent="484">
       <ColNames>publisher_id</ColNames>
       <RefColNames>publisher_id</RefColNames>
       <RefTableName>PUBLISHER</RefTableName>
     </foreign-key>
-    <index id="522" parent="484" name="sqlite_autoindex_BOOK_1">
+    <index id="526" parent="484" name="isbn_idx">
+      <ColNames>isbn</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="527" parent="484" name="sqlite_autoindex_BOOK_1">
       <ColNames>isbn</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
-    <key id="523" parent="484">
+    <index id="528" parent="484" name="release_year_idx">
+      <ColNames>release_year</ColNames>
+    </index>
+    <index id="529" parent="484" name="price_idx">
+      <ColNames>sales_price</ColNames>
+    </index>
+    <index id="530" parent="484" name="publisher_idx">
+      <ColNames>publisher_id</ColNames>
+    </index>
+    <key id="531" parent="484">
       <ColNames>isbn</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>sqlite_autoindex_BOOK_1</UnderlyingIndexName>
     </key>
-    <column id="524" parent="485" name="isbn">
+    <column id="532" parent="485" name="isbn">
       <DasType>CHAR(13)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="525" parent="485" name="category_id">
+    <column id="533" parent="485" name="category_id">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <foreign-key id="526" parent="485">
+    <foreign-key id="534" parent="485">
       <ColNames>isbn</ColNames>
       <RefColNames>isbn</RefColNames>
       <RefTableName>BOOK</RefTableName>
     </foreign-key>
-    <foreign-key id="527" parent="485">
+    <foreign-key id="535" parent="485">
       <ColNames>category_id</ColNames>
       <RefColNames>category_id</RefColNames>
       <RefTableName>CATEGORY</RefTableName>
     </foreign-key>
-    <column id="528" parent="486" name="warehouse_id">
+    <index id="536" parent="485" name="book_cat_isbn_idx">
+      <ColNames>isbn</ColNames>
+    </index>
+    <index id="537" parent="485" name="cat_idx">
+      <ColNames>category_id</ColNames>
+    </index>
+    <column id="538" parent="486" name="warehouse_id">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="529" parent="486" name="isbn">
+    <column id="539" parent="486" name="isbn">
       <DasType>CHAR(13)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="530" parent="486" name="order_id">
+    <column id="540" parent="486" name="order_id">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="531" parent="486" name="quantity">
+    <column id="541" parent="486" name="quantity">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <foreign-key id="532" parent="486">
+    <foreign-key id="542" parent="486">
       <ColNames>warehouse_id</ColNames>
       <RefColNames>warehouse_id</RefColNames>
       <RefTableName>WAREHOUSE</RefTableName>
     </foreign-key>
-    <foreign-key id="533" parent="486">
+    <foreign-key id="543" parent="486">
       <ColNames>isbn</ColNames>
       <RefColNames>isbn</RefColNames>
       <RefTableName>BOOK</RefTableName>
     </foreign-key>
-    <foreign-key id="534" parent="486">
+    <foreign-key id="544" parent="486">
       <ColNames>order_id</ColNames>
       <RefColNames>order_id</RefColNames>
       <RefTableName>ORDER</RefTableName>
     </foreign-key>
-    <column id="535" parent="487" name="category_id">
+    <index id="545" parent="486" name="book_order_warehouse_idx">
+      <ColNames>warehouse_id</ColNames>
+    </index>
+    <index id="546" parent="486" name="book_order_isbn_idx">
+      <ColNames>isbn</ColNames>
+    </index>
+    <index id="547" parent="486" name="book_order_idx">
+      <ColNames>order_id</ColNames>
+    </index>
+    <column id="548" parent="487" name="category_id">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="536" parent="487" name="cat_name">
+    <column id="549" parent="487" name="cat_name">
       <DasType>VARCHAR(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="537" parent="487" name="description">
+    <column id="550" parent="487" name="description">
       <DasType>VARCHAR(255)|0s</DasType>
       <Position>3</Position>
     </column>
-    <key id="538" parent="487">
+    <key id="551" parent="487">
       <ColNames>category_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="539" parent="488" name="employee_id">
+    <column id="552" parent="488" name="employee_id">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="540" parent="488" name="warehouse_id">
+    <column id="553" parent="488" name="warehouse_id">
       <DasType>INTEGER|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="541" parent="488" name="position">
+    <column id="554" parent="488" name="position">
       <DasType>VARCHAR(25)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <foreign-key id="542" parent="488">
+    <foreign-key id="555" parent="488">
       <ColNames>employee_id</ColNames>
       <RefColNames>user_id</RefColNames>
       <RefTableName>USER</RefTableName>
     </foreign-key>
-    <foreign-key id="543" parent="488">
+    <foreign-key id="556" parent="488">
       <ColNames>warehouse_id</ColNames>
       <RefColNames>warehouse_id</RefColNames>
       <RefTableName>WAREHOUSE</RefTableName>
     </foreign-key>
-    <column id="544" parent="489" name="name_id">
+    <index id="557" parent="488" name="employee_index">
+      <ColNames>employee_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="558" parent="488" name="emp_warehouse_idx">
+      <ColNames>warehouse_id</ColNames>
+    </index>
+    <index id="559" parent="488" name="position_idx">
+      <ColNames>position</ColNames>
+    </index>
+    <column id="560" parent="489" name="name_id">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="545" parent="489" name="fname">
+    <column id="561" parent="489" name="fname">
       <DasType>VARCHAR(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="546" parent="489" name="lname">
+    <column id="562" parent="489" name="lname">
       <DasType>VARCHAR(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="547" parent="489" name="middle_inits">
+    <column id="563" parent="489" name="middle_inits">
       <DasType>VARCHAR(10)|0s</DasType>
       <Position>4</Position>
     </column>
-    <key id="548" parent="489">
+    <index id="564" parent="489" name="name_idx">
+      <ColNames>name_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="565" parent="489" name="lname_idx">
+      <ColNames>lname</ColNames>
+    </index>
+    <key id="566" parent="489">
       <ColNames>name_id</ColNames>
       <Primary>1</Primary>
+      <UnderlyingIndexName>name_idx</UnderlyingIndexName>
     </key>
-    <column id="549" parent="490" name="order_id">
+    <column id="567" parent="490" name="order_id">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="550" parent="490" name="sale_date">
+    <column id="568" parent="490" name="sale_date">
       <DasType>DATE|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="551" parent="490" name="bill_no">
+    <column id="569" parent="490" name="bill_no">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="552" parent="490" name="customer_id">
+    <column id="570" parent="490" name="customer_id">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <foreign-key id="553" parent="490">
+    <foreign-key id="571" parent="490">
       <ColNames>customer_id</ColNames>
       <RefColNames>user_id</RefColNames>
       <RefTableName>USER</RefTableName>
     </foreign-key>
-    <key id="554" parent="490">
+    <index id="572" parent="490" name="order_idx">
+      <ColNames>order_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="573" parent="490" name="order_date_idx">
+      <ColNames>sale_date</ColNames>
+    </index>
+    <index id="574" parent="490" name="order_customer_idx">
+      <ColNames>customer_id</ColNames>
+    </index>
+    <key id="575" parent="490">
       <ColNames>order_id</ColNames>
       <Primary>1</Primary>
+      <UnderlyingIndexName>order_idx</UnderlyingIndexName>
     </key>
-    <column id="555" parent="491" name="publisher_id">
+    <column id="576" parent="491" name="publisher_id">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="556" parent="491" name="pub_name">
+    <column id="577" parent="491" name="pub_name">
       <DasType>VARCHAR(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="557" parent="491" name="phone_no">
+    <column id="578" parent="491" name="phone_no">
       <DasType>INTEGER(10)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="558" parent="491" name="email">
+    <column id="579" parent="491" name="email">
       <DasType>VARCHAR(30)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <key id="559" parent="491">
+    <index id="580" parent="491" name="publisher_id_idx">
+      <ColNames>publisher_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="581" parent="491" name="publisher_name_idx">
+      <ColNames>pub_name</ColNames>
+    </index>
+    <key id="582" parent="491">
       <ColNames>publisher_id</ColNames>
       <Primary>1</Primary>
+      <UnderlyingIndexName>publisher_id_idx</UnderlyingIndexName>
     </key>
-    <column id="560" parent="492" name="user_id">
+    <column id="583" parent="492" name="user_id">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="561" parent="492" name="name_id">
+    <column id="584" parent="492" name="name_id">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="562" parent="492" name="email">
+    <column id="585" parent="492" name="email">
       <DasType>VARCHAR(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="563" parent="492" name="phone_no">
+    <column id="586" parent="492" name="phone_no">
       <DasType>INTEGER(10)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="564" parent="492" name="address_id">
+    <column id="587" parent="492" name="address_id">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <foreign-key id="565" parent="492">
+    <foreign-key id="588" parent="492">
       <ColNames>name_id</ColNames>
       <RefColNames>name_id</RefColNames>
       <RefTableName>NAME</RefTableName>
     </foreign-key>
-    <foreign-key id="566" parent="492">
+    <foreign-key id="589" parent="492">
       <ColNames>address_id</ColNames>
       <RefColNames>address_id</RefColNames>
       <RefTableName>ADDRESS</RefTableName>
     </foreign-key>
-    <key id="567" parent="492">
+    <index id="590" parent="492" name="user_id_idx">
+      <ColNames>user_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="591" parent="492" name="user_name_idx">
+      <ColNames>name_id</ColNames>
+    </index>
+    <index id="592" parent="492" name="user_email_idx">
+      <ColNames>email</ColNames>
+    </index>
+    <index id="593" parent="492" name="user_phone_idx">
+      <ColNames>phone_no</ColNames>
+    </index>
+    <index id="594" parent="492" name="user_addr_idx">
+      <ColNames>address_id</ColNames>
+    </index>
+    <key id="595" parent="492">
       <ColNames>user_id</ColNames>
       <Primary>1</Primary>
+      <UnderlyingIndexName>user_id_idx</UnderlyingIndexName>
     </key>
-    <column id="568" parent="493" name="warehouse_id">
+    <column id="596" parent="493" name="warehouse_id">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="569" parent="493" name="address_id">
+    <column id="597" parent="493" name="address_id">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="570" parent="493" name="total_capacity">
+    <column id="598" parent="493" name="total_capacity">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <foreign-key id="571" parent="493">
+    <foreign-key id="599" parent="493">
       <ColNames>address_id</ColNames>
       <RefColNames>address_id</RefColNames>
       <RefTableName>ADDRESS</RefTableName>
     </foreign-key>
-    <key id="572" parent="493">
+    <index id="600" parent="493" name="warehouse_id_idx">
+      <ColNames>warehouse_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="601" parent="493" name="warehouse_addr_idx">
+      <ColNames>address_id</ColNames>
+    </index>
+    <index id="602" parent="493" name="warehouse_cap_idx">
+      <ColNames>total_capacity</ColNames>
+    </index>
+    <key id="603" parent="493">
       <ColNames>warehouse_id</ColNames>
       <Primary>1</Primary>
+      <UnderlyingIndexName>warehouse_id_idx</UnderlyingIndexName>
     </key>
-    <column id="573" parent="494" name="isbn">
+    <column id="604" parent="494" name="isbn">
       <DasType>CHAR(13)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="574" parent="494" name="warehouse_id">
+    <column id="605" parent="494" name="warehouse_id">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="575" parent="494" name="quantity">
+    <column id="606" parent="494" name="quantity">
       <DasType>INTEGER|0s</DasType>
       <Position>3</Position>
     </column>
-    <foreign-key id="576" parent="494">
+    <foreign-key id="607" parent="494">
       <ColNames>isbn</ColNames>
       <RefColNames>isbn</RefColNames>
       <RefTableName>BOOK</RefTableName>
     </foreign-key>
-    <foreign-key id="577" parent="494">
+    <foreign-key id="608" parent="494">
       <ColNames>warehouse_id</ColNames>
       <RefColNames>warehouse_id</RefColNames>
       <RefTableName>WAREHOUSE</RefTableName>
     </foreign-key>
-    <column id="578" parent="495" name="author_id">
+    <index id="609" parent="494" name="warehouse_stk_isbn_idx">
+      <ColNames>isbn</ColNames>
+    </index>
+    <index id="610" parent="494" name="warehouse_stk_warehouse_idx">
+      <ColNames>warehouse_id</ColNames>
+    </index>
+    <index id="611" parent="494" name="warehouse_stk_quantity_idx">
+      <ColNames>quantity</ColNames>
+    </index>
+    <column id="612" parent="495" name="author_id">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="579" parent="495" name="isbn">
+    <column id="613" parent="495" name="isbn">
       <DasType>CHAR(13)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <foreign-key id="580" parent="495">
+    <foreign-key id="614" parent="495">
       <ColNames>author_id</ColNames>
       <RefColNames>author_id</RefColNames>
       <RefTableName>AUTHOR</RefTableName>
     </foreign-key>
-    <foreign-key id="581" parent="495">
+    <foreign-key id="615" parent="495">
       <ColNames>isbn</ColNames>
       <RefColNames>isbn</RefColNames>
       <RefTableName>BOOK</RefTableName>
     </foreign-key>
-    <column id="582" parent="496" name="type">
+    <index id="616" parent="495" name="writteb_by_author_idx">
+      <ColNames>author_id</ColNames>
+    </index>
+    <index id="617" parent="495" name="written_by_isbn_idx">
+      <ColNames>isbn</ColNames>
+    </index>
+    <column id="618" parent="496" name="type">
       <DasType>TEXT|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="583" parent="496" name="name">
+    <column id="619" parent="496" name="name">
       <DasType>TEXT|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="584" parent="496" name="tbl_name">
+    <column id="620" parent="496" name="tbl_name">
       <DasType>TEXT|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="585" parent="496" name="rootpage">
+    <column id="621" parent="496" name="rootpage">
       <DasType>INT|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="586" parent="496" name="sql">
+    <column id="622" parent="496" name="sql">
       <DasType>TEXT|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="587" parent="497" name="fname">
+    <column id="623" parent="497" name="fname">
       <DasType>VARCHAR(50)|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="588" parent="497" name="middle_inits">
+    <column id="624" parent="497" name="middle_inits">
       <DasType>VARCHAR(10)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="589" parent="497" name="lname">
+    <column id="625" parent="497" name="lname">
       <DasType>VARCHAR(50)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="590" parent="497" name="copies_sold">
+    <column id="626" parent="497" name="copies_sold">
       <Position>4</Position>
     </column>
-    <column id="591" parent="497" name="total_revenue">
+    <column id="627" parent="497" name="total_revenue">
       <Position>5</Position>
     </column>
-    <column id="592" parent="498" name="order_id">
+    <column id="628" parent="498" name="order_id">
       <DasType>INTEGER|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="593" parent="498" name="sale_date">
+    <column id="629" parent="498" name="sale_date">
       <DasType>DATE|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="594" parent="498" name="isbn">
+    <column id="630" parent="498" name="isbn">
       <DasType>CHAR(13)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="595" parent="498" name="title">
+    <column id="631" parent="498" name="title">
       <DasType>VARCHAR(255)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="596" parent="498" name="sales_price">
+    <column id="632" parent="498" name="sales_price">
       <DasType>DECIMAL(10,2 digit)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="597" parent="498" name="quantity">
+    <column id="633" parent="498" name="quantity">
       <DasType>INTEGER|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="598" parent="498" name="total_spent">
+    <column id="634" parent="498" name="total_spent">
       <Position>7</Position>
     </column>
-    <column id="599" parent="499" name="order_id">
+    <column id="635" parent="499" name="order_id">
       <DasType>INTEGER|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="600" parent="499" name="sale_date">
+    <column id="636" parent="499" name="sale_date">
       <DasType>DATE|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="601" parent="499" name="bill_no">
+    <column id="637" parent="499" name="bill_no">
       <DasType>INTEGER|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="602" parent="499" name="total_books_purchased">
+    <column id="638" parent="499" name="total_books_purchased">
       <Position>4</Position>
     </column>
-    <column id="603" parent="499" name="total_price">
+    <column id="639" parent="499" name="total_price">
       <Position>5</Position>
     </column>
-    <column id="604" parent="500" name="isbn">
+    <column id="640" parent="500" name="isbn">
       <DasType>CHAR(13)|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="605" parent="500" name="title">
+    <column id="641" parent="500" name="title">
       <DasType>VARCHAR(255)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="606" parent="500" name="author_name">
+    <column id="642" parent="500" name="author_name">
       <Position>3</Position>
     </column>
-    <column id="607" parent="500" name="copies_sold">
+    <column id="643" parent="500" name="copies_sold">
       <Position>4</Position>
     </column>
-    <column id="608" parent="500" name="total_revenue">
+    <column id="644" parent="500" name="total_revenue">
       <Position>5</Position>
     </column>
-    <column id="609" parent="501" name="warehouse_id">
+    <column id="645" parent="501" name="warehouse_id">
       <DasType>INTEGER|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="610" parent="501" name="isbn">
+    <column id="646" parent="501" name="isbn">
       <DasType>CHAR(13)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="611" parent="501" name="title">
+    <column id="647" parent="501" name="title">
       <DasType>VARCHAR(255)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="612" parent="501" name="inventory">
+    <column id="648" parent="501" name="inventory">
       <DasType>INTEGER|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="613" parent="501" name="inventory_value">
+    <column id="649" parent="501" name="inventory_value">
       <Position>5</Position>
     </column>
   </database-model>
