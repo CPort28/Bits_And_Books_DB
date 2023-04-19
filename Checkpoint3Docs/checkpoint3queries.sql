@@ -1,7 +1,7 @@
 
 -- Simple Queries
 -- a. Find the titles of all books by Pratchett that cost less than $10
-SELECT B.title
+SELECT B.title, B.sales_price
 FROM BOOK B
 JOIN WRITTEN_BY WB on B.isbn = WB.isbn
 JOIN AUTHOR A on A.author_id = WB.author_id
@@ -18,7 +18,7 @@ JOIN USER U on O.customer_id = U.user_id
 WHERE U.user_id = 50;
 
 -- c. Find the titles and ISBNs for all books with less than 5 copies in stock
--- NOTE: only one book has less than 5 in stock (ColdFusion)
+-- NOTE: only one book has less than 5 in stock (Pale Blue Dot)
 SELECT B.title, B.isbn, sum(WS.quantity) AS stock
 FROM BOOK B
 JOIN WAREHOUSE_STOCK WS on B.isbn = WS.isbn
@@ -27,7 +27,7 @@ HAVING sum(WS.quantity) < 5;
 
 -- d. Give all the customers who purchased a book by Pratchett
 -- and the titles of Pratchett books they purchased
-SELECT NUser.fname, NUser.lname, B.title
+SELECT DISTINCT NUser.fname, NUser.lname, B.title
 FROM NAME NUser
 JOIN USER U on NUser.name_id = U.name_id
 JOIN "ORDER" on U.user_id = "ORDER".customer_id
@@ -36,7 +36,8 @@ JOIN BOOK B on BO.isbn = B.isbn
 JOIN WRITTEN_BY WB on B.isbn = WB.isbn
 JOIN AUTHOR A on WB.author_id = A.author_id
 JOIN NAME NAuth on A.name_id = NAuth.name_id
-WHERE NAuth.lname = 'Pratchett';
+WHERE NAuth.lname = 'Pratchett'
+ORDER BY U.user_id;
 
 -- e. Find the total number of books purchased by a single customer
 -- (you choose how to designate the customer) (USER_ID = 50)
@@ -80,13 +81,13 @@ HAVING books_sold = (SELECT max(b_sold)
                            GROUP BY A.author_id));
 
 -- 2) Check which warehouses have enough stock to order 40 copies
--- of a book(given the isbn, “x” (596004478 in this example))
+-- of a book(given the isbn, “x” (0000385494327 in this example))
 SELECT B.isbn, WAdd.address as warehouse_addr, WAdd.city, WAdd.state, WS.quantity as stock
 FROM BOOK B
 JOIN WAREHOUSE_STOCK WS on B.isbn = WS.isbn
 JOIN WAREHOUSE W on WS.warehouse_id = W.warehouse_id
 JOIN ADDRESS WAdd on W.address_id = WAdd.address_id
-WHERE B.isbn = '0000596004478' AND WS.quantity >= 40;
+WHERE B.isbn = '0000385494327' AND WS.quantity >= 40;
 
 -- 3) Determine the total revenue of the bookstore
 SELECT  sum(B.sales_price * BO.quantity) as total_sales
@@ -102,7 +103,8 @@ JOIN BOOK_ORDER BO on B.isbn = BO.isbn
 JOIN "ORDER" O on BO.order_id = O.order_id
 JOIN USER U on O.customer_id = U.user_id
 JOIN NAME N on U.name_id = N.name_id
-GROUP BY U.user_id;
+GROUP BY U.user_id
+ORDER BY total_spent DESC;
 
 -- b. Provide a list of customer names and e-mail addresses for customers who have spent more than the average customer.
 SELECT N.fname, N.lname, U.email, sum(B.sales_price * BO.quantity) as total_spent
@@ -119,7 +121,8 @@ HAVING total_spent > (SELECT avg(spent_per_c)
                             JOIN "ORDER" O on BO.order_id = O.order_id
                             JOIN USER U on O.customer_id = U.user_id
                             JOIN NAME N on U.name_id = N.name_id
-                            GROUP BY U.user_id));
+                            GROUP BY U.user_id))
+ORDER BY total_spent DESC;
 
 -- c. Provide a list of the titles in the database and associated total copies sold
 -- to customers, sorted from the title that has sold the most individual copies to
