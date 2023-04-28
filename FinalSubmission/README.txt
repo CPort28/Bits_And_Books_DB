@@ -3,7 +3,7 @@ Final Submission for CSE 3421 Project
 Authors: Canaan Porter + Alex Felderean
 
 Files:
-1. Final Report -> PLACEHOLDER.pdf
+1. Final Report Document -> FinalReport.pdf
 2. Binary SQlite File -> BitsBooks.sqlite
 3. SQL Create File -> CREATE.sql
 4. Data Files -> CSV files under DataFiles Directory
