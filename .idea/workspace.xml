@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="982548bb-3267-4245-97df-b7376ab8e55b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/INSERT-DELETE.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3d6b7518-10ce-41bf-a450-8baad42ce002/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3d6b7518-10ce-41bf-a450-8baad42ce002/storage_v2/_src_/schema/main.uQUzAA.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5488d910-61a9-4c35-9798-e349cc9295ba.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5488d910-61a9-4c35-9798-e349cc9295ba/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5488d910-61a9-4c35-9798-e349cc9295ba/storage_v2/_src_/schema/main.uQUzAA.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Checkpoint3Docs/checkpoint3queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Checkpoint3Docs/checkpoint3queries.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/BitsBooks.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/db/BitsBooks.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/gen_old_seed.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/gen_old_seed.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/book.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/book_list.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Schemas/BitsandBooks.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Schemas/BitsandBooks.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +36,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;database.data.extractors.current.export.id&quot;: &quot;SQL-Insert-Multirow.sql.groovy&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/canaanporter&quot;
+    &quot;last_opened_file_path&quot;: &quot;/Users/canaanporter&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [

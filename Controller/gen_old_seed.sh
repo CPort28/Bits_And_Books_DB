@@ -1,5 +1,5 @@
-ruby bb_generate.rb $1
 sqlite3 ../db/$1 <<'END_SQL'
+.read ../Schemas/BitsandBooks.sql
 .mode csv
 .separator ;
 .import ../OutputNoHeaders/bb_categories.csv CATEGORY

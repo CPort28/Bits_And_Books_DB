@@ -58,7 +58,7 @@ CREATE TABLE USER (
     email VARCHAR(255) NOT NULL,
     phone_no CHAR(10),
     address_id INTEGER NOT NULL,
-    FOREIGN KEY(name_id) REFERENCES NAME(name_id)
+    FOREIGN KEY(name_id) REFERENCES NAME(name_id),
     FOREIGN KEY(address_id) REFERENCES ADDRESS(address_id)
 );
 
